@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://goldenhuaji.tk/</loc>
+  <lastmod>2020-08-10T14:23:38+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://goldenhuaji.tk/tags/</loc>
+  <lastmod>2020-08-10T14:23:38+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://goldenhuaji.tk/archives/</loc>
+  <lastmod>2020-08-10T14:23:38+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://goldenhuaji.tk/about/</loc>
+  <lastmod>2020-08-10T14:23:38+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://goldenhuaji.tk/%E3%80%90%E5%8D%9A%E5%AE%A2%E3%80%91%E5%8F%8C%E7%BA%BF%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</loc>
+  <lastmod>2020-08-10T14:23:38+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://goldenhuaji.tk/%E3%80%90%E5%8D%9A%E5%AE%A2%E3%80%91%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0/</loc>
+  <lastmod>2020-08-10T14:23:38+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://goldenhuaji.tk/hello-world/</loc>
+  <lastmod>2020-08-10T14:23:38+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://goldenhuaji.tk/tags/%E5%AD%A6%E4%B9%A0/</loc>
+  <lastmod>2020-08-10T14:23:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goldenhuaji.tk/tags/%E5%8D%9A%E5%AE%A2/</loc>
+  <lastmod>2020-08-10T14:23:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goldenhuaji.tk/tags/Hexo/</loc>
+  <lastmod>2020-08-10T14:23:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
