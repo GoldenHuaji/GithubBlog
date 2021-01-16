@@ -1,15 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>【资源下载】索引</title>
-    <url>/%E3%80%90%E8%B5%84%E6%BA%90%E4%B8%8B%E8%BD%BD%E3%80%91%E7%B4%A2%E5%BC%95/</url>
-    <content><![CDATA[<div id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请再试试." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容."><div class="hbe-input-container"><input type="password" id="hbePass" placeholder="您好, 这里需要密码." /><label>您好, 这里需要密码.</label><div class="bottom-line"></div></div><script id="hbeData" type="hbeData" data-hmacdigest="7dd31a9843f3a7c64d94a19f06bb1a7b05470c427c93c852cdc24b4e019c5a97">7ad004f01a3f6162e5951297680a830b3089e567f9d9712015c1507979760ea93ac0e6f5d78d1cea524832119a5828aa9cc710f88371252908d7178668f42052a93686ca27af00a356b5a9c44e9ddd22a0023cbb71bb75c19ee21243ef95688571aaa485cee2d4a1c194de7ed669d05a6e6c88c2130615406b864ae726d54c6d47cbeac4849550aee16e30747bba3d2bc29b1e9f5dea0699bdcd3cdfab807d18c9b3774573c682d142b94a89a9f0167ba534d9ca67ac5f5d4fb738a7f72e8474c9d2c8246e9e78d2d402cc7143de73f7c8cbf39c62c6d55e75f214a58ff099d3c182ef7b418f008766080172751582c040853c76f0c0e45c20ad86eedd27f8fe934b0c189c61fdaeaba426eaa0f0b628d4c344d8ab74e24d8a51324c91271f71</script></div><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
-      <tags>
-        <tag>下载</tag>
-        <tag>加密文档</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>你好，世界！</title>
     <url>/hello-world/</url>
     <content><![CDATA[<p><a href="https://coding-pages-bucket-3464683-7910097-6969-402879-1259692093.cos-website.ap-hongkong.myqcloud.com/">镜像网站</a></p>
@@ -29,70 +20,6 @@
 
 <p>更多信息: <a href="https://hexo.io/docs/one-command-deployment.html">部署</a></p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>【QScript】应用预告和更名通知</title>
-    <url>/%E3%80%90QScript%E3%80%91%E5%BA%94%E7%94%A8%E9%A2%84%E5%91%8A%E5%92%8C%E6%9B%B4%E5%90%8D%E9%80%9A%E7%9F%A5/</url>
-    <content><![CDATA[<blockquote>
-<p>摘要：</p>
-<ol>
-<li><u>『QPlus』</u>更名为<u>『QScript』</u></li>
-<li><u>『QScript』</u>主打脚本功能，不提供非脚本功能，如：防止撤回等</li>
-</ol>
-</blockquote>
-<a id="more"></a>
-
-<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p>如摘要所言，本次将 “QPlus” 更名为 ”QScript“，额外提供脚本功能，<strong>不提供部分非脚本功能</strong>。本模块使用 <a href="https://kotl.in/">Kotlin</a> 开发，下载链接：咕咕咕…</p>
-<h1 id="Q-amp-A"><a href="#Q-amp-A" class="headerlink" title="Q &amp; A"></a>Q &amp; A</h1><div class="note info"><h2 id="QScript-是什么？"><a href="#QScript-是什么？" class="headerlink" title="QScript 是什么？"></a>QScript 是什么？</h2><p><strong>一个 <a href="https://xposed.info/">Xposed</a> 模块</strong>，用于执行<strong>自动化脚本</strong></p>
-<h2 id="如何启用？"><a href="#如何启用？" class="headerlink" title="如何启用？"></a>如何启用？</h2><p>在 <a href="xposed.info">Xposed</a> 管理器中勾选本模块并重启手机。</p>
-<h2 id="如何编辑脚本？-有脚本-API-文档吗？"><a href="#如何编辑脚本？-有脚本-API-文档吗？" class="headerlink" title="如何编辑脚本？ /  有脚本 API 文档吗？"></a>如何编辑脚本？ /  有脚本 API 文档吗？</h2><p>咕咕咕…</p>
-<h2 id="如何下载？"><a href="#如何下载？" class="headerlink" title="如何下载？"></a>如何下载？</h2><p>我们会在<b><a href="/">本博客网站</a></b>中发布下载链接及更新日志。具体下载链接请<strong>参看<a href="#%E6%AD%A3%E6%96%87">正文</a></strong></p>
-<div class="note warning"><h4 id="警告"><a href="#警告" class="headerlink" title="警告"></a>警告</h4><p>我们<strong>不会</strong>在任何<strong>其他网站</strong>中发布<strong>任何版本</strong>，如果您不是从<b><a href="https://blog.goldenhuaji.cn.mw/">本博客</a></b>下载的本软件，请自行<strong>注意安全</strong>。</p>
-</div>
-
-<h2 id="目前的开发进度是？"><a href="#目前的开发进度是？" class="headerlink" title="目前的开发进度是？"></a>目前的开发进度是？</h2><p>咕咕咕…</p></div>]]></content>
-      <tags>
-        <tag>QScript</tag>
-        <tag>QPlus</tag>
-        <tag>Android</tag>
-        <tag>Xposed</tag>
-        <tag>Kotlin</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【博客】双线搭建个人博客</title>
-    <url>/%E3%80%90%E5%8D%9A%E5%AE%A2%E3%80%91%E5%8F%8C%E7%BA%BF%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<blockquote class="blockquote-center">
-<p>哪个男孩不想拥有一个流畅的博客呢？</p>
-
-</blockquote>
-
-<blockquote>
-<p>经过努力，我们已经搭建好一个博客了。但由于国内特殊网络原因，使得博客加载<strong>非常慢！</strong>今天这期教程就让大家拥有一个快速的博客。</p>
-</blockquote>
-<p><b>本博客中的过程非常重要！必须一步一步地跟着来，错一步，步步错！ </b></p>
-<a id="more"></a>
-
-<p><b>如果您不能放大图像，请您鼠标右击图像，选择<code>在新标签页中打开图片</code></b></p>
-<h2 id="准备（非常重要）"><a href="#准备（非常重要）" class="headerlink" title="准备（非常重要）"></a>准备（非常重要）</h2><ul>
-<li><strong>（重要）</strong>已搭建一个 Github 的单线博客(点击按钮查看) <a class="btn" href="http://goldenhuaji.tk/%E3%80%90%E5%8D%9A%E5%AE%A2%E3%80%91%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0">点击跳转</a></li>
-</ul>
-<h2 id="注册-Coding-账户"><a href="#注册-Coding-账户" class="headerlink" title="注册 Coding 账户"></a>注册 Coding 账户</h2><p>访问 <a href="https://coding.net/">Coding 官网</a>，点击右上角的<code>免费注册</code>，团队名称随便填。完成注册后登录账户。打开<code>个人账户设置</code>，添加<code>服务邮箱</code>、<code>服务密码</code><strong>（非常重要！！）</strong>，如图（由于博主已经添加了，所以显示的是修改）：<img src="https://s1.ax1x.com/2020/08/06/ac4CQ0.png" alt="完成设置+"></p>
-<p>完成后点击<code>SSH公钥</code>，选择<code>新增公钥</code>，在<code>公钥内容</code>中填写 <code>C:\Users\Username\id_rsa.pub</code> 的全部内容(此文件已于上一篇博客中创建，请点击本文顶部的按钮查看该博客)，并勾选<code>永久有效</code>。如图：<img src="https://s1.ax1x.com/2020/08/06/acIfdU.png" alt="创建公钥"></p>
-<h2 id="创建仓库并开源"><a href="#创建仓库并开源" class="headerlink" title="创建仓库并开源"></a>创建仓库并开源</h2><p>登录团队后，点击<code>新建项目</code>，后选择<code>代码托管项目</code>，并如图所示操作<img src="https://s1.ax1x.com/2020/08/06/acfXCR.png" alt="新建项目"><img src="https://s1.ax1x.com/2020/08/06/achV2t.png" alt="创建仓库"></p>
-<p>完成后回到主页，点击左下角的<code>项目设置</code>，点击<code>功能开关</code>，打开<code>持续集成</code>和<code>持续部署</code>，如图。<img src="https://s1.ax1x.com/2020/08/06/achcM6.png" alt="配置项目"></p>
-<p>完成后，返回项目主页，点击<code>代码仓库</code>-&gt;<code>设置</code>-&gt;<code>访问设置</code>-&gt;<code>公开源代码</code>，期间可能会提示输入服务密码，如图(如果您不能放大图像，请您鼠标右击图像，选择<code>在新标签页中打开图片</code>)：<img src="https://s1.ax1x.com/2020/08/06/acISK0.png"></p>
-<p>现在，点击<code>持续部署</code>-&gt;<code>静态网站</code>，完成实名认证后，新建静态网站，网站名称随便写，项目和仓库选择我们之前创建的项目，勾选<code>代码自动部署</code>，如图：<img src="https://s1.ax1x.com/2020/08/06/ac7sRH.png" alt="1"></p>
-<h2 id="链接-Coding"><a href="#链接-Coding" class="headerlink" title="链接 Coding"></a>链接 Coding</h2><p>打开<code>站点配置文件</code>，并如图所示操作：<img src="https://s1.ax1x.com/2020/08/06/acoTAS.png" alt="链接"></p>
-<h2 id="更新博客"><a href="#更新博客" class="headerlink" title="更新博客"></a>更新博客</h2><p>在博客根目录下打开 GitBash ，运行命令：<code>hexo g &amp;&amp; hexo d</code>，期间会让你输入账号密码，请如图操作：</p>
-<p><img src="https://s1.ax1x.com/2020/08/06/ac7MZV.png" alt="更新博客"></p>
-<h2 id="完成"><a href="#完成" class="headerlink" title="完成"></a>完成</h2><p>现在，请点击<code>持续部署</code>-&gt;<code>静态网站</code>，你可以通过 Coding 给你的访问地址来访问你的博客了！ </p>
-]]></content>
-      <tags>
-        <tag>学习</tag>
-        <tag>博客</tag>
-        <tag>Hexo</tag>
-      </tags>
   </entry>
   <entry>
     <title>【博客】个人博客搭建记</title>
@@ -135,6 +62,79 @@
         <tag>学习</tag>
         <tag>博客</tag>
         <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【博客】双线搭建个人博客</title>
+    <url>/%E3%80%90%E5%8D%9A%E5%AE%A2%E3%80%91%E5%8F%8C%E7%BA%BF%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<blockquote class="blockquote-center">
+<p>哪个男孩不想拥有一个流畅的博客呢？</p>
+
+</blockquote>
+
+<blockquote>
+<p>经过努力，我们已经搭建好一个博客了。但由于国内特殊网络原因，使得博客加载<strong>非常慢！</strong>今天这期教程就让大家拥有一个快速的博客。</p>
+</blockquote>
+<p><b>本博客中的过程非常重要！必须一步一步地跟着来，错一步，步步错！ </b></p>
+<a id="more"></a>
+
+<p><b>如果您不能放大图像，请您鼠标右击图像，选择<code>在新标签页中打开图片</code></b></p>
+<h2 id="准备（非常重要）"><a href="#准备（非常重要）" class="headerlink" title="准备（非常重要）"></a>准备（非常重要）</h2><ul>
+<li><strong>（重要）</strong>已搭建一个 Github 的单线博客(点击按钮查看) <a class="btn" href="http://goldenhuaji.tk/%E3%80%90%E5%8D%9A%E5%AE%A2%E3%80%91%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0">点击跳转</a></li>
+</ul>
+<h2 id="注册-Coding-账户"><a href="#注册-Coding-账户" class="headerlink" title="注册 Coding 账户"></a>注册 Coding 账户</h2><p>访问 <a href="https://coding.net/">Coding 官网</a>，点击右上角的<code>免费注册</code>，团队名称随便填。完成注册后登录账户。打开<code>个人账户设置</code>，添加<code>服务邮箱</code>、<code>服务密码</code><strong>（非常重要！！）</strong>，如图（由于博主已经添加了，所以显示的是修改）：<img src="https://s1.ax1x.com/2020/08/06/ac4CQ0.png" alt="完成设置+"></p>
+<p>完成后点击<code>SSH公钥</code>，选择<code>新增公钥</code>，在<code>公钥内容</code>中填写 <code>C:\Users\Username\id_rsa.pub</code> 的全部内容(此文件已于上一篇博客中创建，请点击本文顶部的按钮查看该博客)，并勾选<code>永久有效</code>。如图：<img src="https://s1.ax1x.com/2020/08/06/acIfdU.png" alt="创建公钥"></p>
+<h2 id="创建仓库并开源"><a href="#创建仓库并开源" class="headerlink" title="创建仓库并开源"></a>创建仓库并开源</h2><p>登录团队后，点击<code>新建项目</code>，后选择<code>代码托管项目</code>，并如图所示操作<img src="https://s1.ax1x.com/2020/08/06/acfXCR.png" alt="新建项目"><img src="https://s1.ax1x.com/2020/08/06/achV2t.png" alt="创建仓库"></p>
+<p>完成后回到主页，点击左下角的<code>项目设置</code>，点击<code>功能开关</code>，打开<code>持续集成</code>和<code>持续部署</code>，如图。<img src="https://s1.ax1x.com/2020/08/06/achcM6.png" alt="配置项目"></p>
+<p>完成后，返回项目主页，点击<code>代码仓库</code>-&gt;<code>设置</code>-&gt;<code>访问设置</code>-&gt;<code>公开源代码</code>，期间可能会提示输入服务密码，如图(如果您不能放大图像，请您鼠标右击图像，选择<code>在新标签页中打开图片</code>)：<img src="https://s1.ax1x.com/2020/08/06/acISK0.png"></p>
+<p>现在，点击<code>持续部署</code>-&gt;<code>静态网站</code>，完成实名认证后，新建静态网站，网站名称随便写，项目和仓库选择我们之前创建的项目，勾选<code>代码自动部署</code>，如图：<img src="https://s1.ax1x.com/2020/08/06/ac7sRH.png" alt="1"></p>
+<h2 id="链接-Coding"><a href="#链接-Coding" class="headerlink" title="链接 Coding"></a>链接 Coding</h2><p>打开<code>站点配置文件</code>，并如图所示操作：<img src="https://s1.ax1x.com/2020/08/06/acoTAS.png" alt="链接"></p>
+<h2 id="更新博客"><a href="#更新博客" class="headerlink" title="更新博客"></a>更新博客</h2><p>在博客根目录下打开 GitBash ，运行命令：<code>hexo g &amp;&amp; hexo d</code>，期间会让你输入账号密码，请如图操作：</p>
+<p><img src="https://s1.ax1x.com/2020/08/06/ac7MZV.png" alt="更新博客"></p>
+<h2 id="完成"><a href="#完成" class="headerlink" title="完成"></a>完成</h2><p>现在，请点击<code>持续部署</code>-&gt;<code>静态网站</code>，你可以通过 Coding 给你的访问地址来访问你的博客了！ </p>
+]]></content>
+      <tags>
+        <tag>学习</tag>
+        <tag>博客</tag>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【资源下载】索引</title>
+    <url>/%E3%80%90%E8%B5%84%E6%BA%90%E4%B8%8B%E8%BD%BD%E3%80%91%E7%B4%A2%E5%BC%95/</url>
+    <content><![CDATA[<div id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请再试试." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容."><div class="hbe-input-container"><input type="password" id="hbePass" placeholder="您好, 这里需要密码." /><label>您好, 这里需要密码.</label><div class="bottom-line"></div></div><script id="hbeData" type="hbeData" data-hmacdigest="7dd31a9843f3a7c64d94a19f06bb1a7b05470c427c93c852cdc24b4e019c5a97">7ad004f01a3f6162e5951297680a830b3089e567f9d9712015c1507979760ea93ac0e6f5d78d1cea524832119a5828aa9cc710f88371252908d7178668f42052a93686ca27af00a356b5a9c44e9ddd22a0023cbb71bb75c19ee21243ef95688571aaa485cee2d4a1c194de7ed669d05a6e6c88c2130615406b864ae726d54c6d47cbeac4849550aee16e30747bba3d2bc29b1e9f5dea0699bdcd3cdfab807d18c9b3774573c682d142b94a89a9f0167ba534d9ca67ac5f5d4fb738a7f72e8474c9d2c8246e9e78d2d402cc7143de73f7c8cbf39c62c6d55e75f214a58ff099d3c182ef7b418f008766080172751582c040853c76f0c0e45c20ad86eedd27f8fe934b0c189c61fdaeaba426eaa0f0b628d4c344d8ab74e24d8a51324c91271f71</script></div><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+      <tags>
+        <tag>下载</tag>
+        <tag>加密文档</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【QScript】应用预告和更名通知</title>
+    <url>/%E3%80%90QScript%E3%80%91%E5%BA%94%E7%94%A8%E9%A2%84%E5%91%8A%E5%92%8C%E6%9B%B4%E5%90%8D%E9%80%9A%E7%9F%A5/</url>
+    <content><![CDATA[<blockquote>
+<p>摘要：</p>
+<ol>
+<li><u>『QPlus』</u>更名为<u>『QScript』</u></li>
+<li><u>『QScript』</u>主打脚本功能，不提供非脚本功能，如：防止撤回等</li>
+</ol>
+</blockquote>
+<a id="more"></a>
+
+<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p>如摘要所言，本次将 “QPlus” 更名为 ”QScript“，额外提供脚本功能，<strong>不提供部分非脚本功能</strong>。本模块使用 <a href="https://kotl.in/">Kotlin</a> 开发，下载链接：咕咕咕…</p>
+<h1 id="Q-amp-A"><a href="#Q-amp-A" class="headerlink" title="Q &amp; A"></a>Q &amp; A</h1><div class="note info"><h2 id="QScript-是什么？"><a href="#QScript-是什么？" class="headerlink" title="QScript 是什么？"></a>QScript 是什么？</h2><p><strong>一个 <a href="https://xposed.info/">Xposed</a> 模块</strong>，用于执行<strong>自动化脚本</strong></p>
+<h2 id="如何启用？"><a href="#如何启用？" class="headerlink" title="如何启用？"></a>如何启用？</h2><p>在 <a href="xposed.info">Xposed</a> 管理器中勾选本模块并重启手机。</p>
+<h2 id="如何编辑脚本？-有脚本-API-文档吗？"><a href="#如何编辑脚本？-有脚本-API-文档吗？" class="headerlink" title="如何编辑脚本？ /  有脚本 API 文档吗？"></a>如何编辑脚本？ /  有脚本 API 文档吗？</h2><p>咕咕咕…</p>
+<h2 id="如何下载？"><a href="#如何下载？" class="headerlink" title="如何下载？"></a>如何下载？</h2><p>我们会在<b><a href="/">本博客网站</a></b>中发布下载链接及更新日志。具体下载链接请<strong>参看<a href="#%E6%AD%A3%E6%96%87">正文</a></strong></p>
+<div class="note warning"><h4 id="警告"><a href="#警告" class="headerlink" title="警告"></a>警告</h4><p>我们<strong>不会</strong>在任何<strong>其他网站</strong>中发布<strong>任何版本</strong>，如果您不是从<b><a href="https://blog.goldenhuaji.cn.mw/">本博客</a></b>下载的本软件，请自行<strong>注意安全</strong>。</p>
+</div>
+
+<h2 id="目前的开发进度是？"><a href="#目前的开发进度是？" class="headerlink" title="目前的开发进度是？"></a>目前的开发进度是？</h2><p>咕咕咕…</p></div>]]></content>
+      <tags>
+        <tag>QScript</tag>
+        <tag>QPlus</tag>
+        <tag>Android</tag>
+        <tag>Xposed</tag>
+        <tag>Kotlin</tag>
       </tags>
   </entry>
 </search>
