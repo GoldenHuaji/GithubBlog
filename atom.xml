@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>GoldenHuaji</title>
+  <title>【子恒博客】</title>
   
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://blog.goldenhuaji.cn.mw/"/>
+  <link href="http://blog.tsihen.xyz/"/>
   <updated>2020-12-06T10:24:22.918Z</updated>
-  <id>http://blog.goldenhuaji.cn.mw/</id>
+  <id>http://blog.tsihen.xyz/</id>
   
   <author>
-    <name>GoldenHuaji</name>
+    <name>Tsihen Ho</name>
     
   </author>
   
@@ -18,8 +18,8 @@
   
   <entry>
     <title>【QScript】应用预告和更名通知</title>
-    <link href="http://blog.goldenhuaji.cn.mw/%E3%80%90QScript%E3%80%91%E5%BA%94%E7%94%A8%E9%A2%84%E5%91%8A%E5%92%8C%E6%9B%B4%E5%90%8D%E9%80%9A%E7%9F%A5/"/>
-    <id>http://blog.goldenhuaji.cn.mw/%E3%80%90QScript%E3%80%91%E5%BA%94%E7%94%A8%E9%A2%84%E5%91%8A%E5%92%8C%E6%9B%B4%E5%90%8D%E9%80%9A%E7%9F%A5/</id>
+    <link href="http://blog.tsihen.xyz/%E3%80%90QScript%E3%80%91%E5%BA%94%E7%94%A8%E9%A2%84%E5%91%8A%E5%92%8C%E6%9B%B4%E5%90%8D%E9%80%9A%E7%9F%A5/"/>
+    <id>http://blog.tsihen.xyz/%E3%80%90QScript%E3%80%91%E5%BA%94%E7%94%A8%E9%A2%84%E5%91%8A%E5%92%8C%E6%9B%B4%E5%90%8D%E9%80%9A%E7%9F%A5/</id>
     <published>2020-12-06T09:34:59.000Z</published>
     <updated>2020-12-06T10:24:22.918Z</updated>
     
@@ -39,22 +39,22 @@
     
     
     
-      <category term="QScript" scheme="http://blog.goldenhuaji.cn.mw/tags/QScript/"/>
+      <category term="QScript" scheme="http://blog.tsihen.xyz/tags/QScript/"/>
     
-      <category term="QPlus" scheme="http://blog.goldenhuaji.cn.mw/tags/QPlus/"/>
+      <category term="QPlus" scheme="http://blog.tsihen.xyz/tags/QPlus/"/>
     
-      <category term="Android" scheme="http://blog.goldenhuaji.cn.mw/tags/Android/"/>
+      <category term="Android" scheme="http://blog.tsihen.xyz/tags/Android/"/>
     
-      <category term="Xposed" scheme="http://blog.goldenhuaji.cn.mw/tags/Xposed/"/>
+      <category term="Xposed" scheme="http://blog.tsihen.xyz/tags/Xposed/"/>
     
-      <category term="Kotlin" scheme="http://blog.goldenhuaji.cn.mw/tags/Kotlin/"/>
+      <category term="Kotlin" scheme="http://blog.tsihen.xyz/tags/Kotlin/"/>
     
   </entry>
   
   <entry>
     <title>【资源下载】索引</title>
-    <link href="http://blog.goldenhuaji.cn.mw/%E3%80%90%E8%B5%84%E6%BA%90%E4%B8%8B%E8%BD%BD%E3%80%91%E7%B4%A2%E5%BC%95/"/>
-    <id>http://blog.goldenhuaji.cn.mw/%E3%80%90%E8%B5%84%E6%BA%90%E4%B8%8B%E8%BD%BD%E3%80%91%E7%B4%A2%E5%BC%95/</id>
+    <link href="http://blog.tsihen.xyz/%E3%80%90%E8%B5%84%E6%BA%90%E4%B8%8B%E8%BD%BD%E3%80%91%E7%B4%A2%E5%BC%95/"/>
+    <id>http://blog.tsihen.xyz/%E3%80%90%E8%B5%84%E6%BA%90%E4%B8%8B%E8%BD%BD%E3%80%91%E7%B4%A2%E5%BC%95/</id>
     <published>2020-12-02T13:18:04.000Z</published>
     <updated>2020-12-06T09:30:41.303Z</updated>
     
@@ -68,16 +68,16 @@
     
     
     
-      <category term="下载" scheme="http://blog.goldenhuaji.cn.mw/tags/%E4%B8%8B%E8%BD%BD/"/>
+      <category term="下载" scheme="http://blog.tsihen.xyz/tags/%E4%B8%8B%E8%BD%BD/"/>
     
-      <category term="加密文档" scheme="http://blog.goldenhuaji.cn.mw/tags/%E5%8A%A0%E5%AF%86%E6%96%87%E6%A1%A3/"/>
+      <category term="加密文档" scheme="http://blog.tsihen.xyz/tags/%E5%8A%A0%E5%AF%86%E6%96%87%E6%A1%A3/"/>
     
   </entry>
   
   <entry>
     <title>【博客】双线搭建个人博客</title>
-    <link href="http://blog.goldenhuaji.cn.mw/%E3%80%90%E5%8D%9A%E5%AE%A2%E3%80%91%E5%8F%8C%E7%BA%BF%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
-    <id>http://blog.goldenhuaji.cn.mw/%E3%80%90%E5%8D%9A%E5%AE%A2%E3%80%91%E5%8F%8C%E7%BA%BF%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</id>
+    <link href="http://blog.tsihen.xyz/%E3%80%90%E5%8D%9A%E5%AE%A2%E3%80%91%E5%8F%8C%E7%BA%BF%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://blog.tsihen.xyz/%E3%80%90%E5%8D%9A%E5%AE%A2%E3%80%91%E5%8F%8C%E7%BA%BF%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</id>
     <published>2020-08-06T04:42:49.000Z</published>
     <updated>2020-12-02T13:20:45.006Z</updated>
     
@@ -99,18 +99,18 @@
     
     
     
-      <category term="学习" scheme="http://blog.goldenhuaji.cn.mw/tags/%E5%AD%A6%E4%B9%A0/"/>
+      <category term="学习" scheme="http://blog.tsihen.xyz/tags/%E5%AD%A6%E4%B9%A0/"/>
     
-      <category term="博客" scheme="http://blog.goldenhuaji.cn.mw/tags/%E5%8D%9A%E5%AE%A2/"/>
+      <category term="博客" scheme="http://blog.tsihen.xyz/tags/%E5%8D%9A%E5%AE%A2/"/>
     
-      <category term="Hexo" scheme="http://blog.goldenhuaji.cn.mw/tags/Hexo/"/>
+      <category term="Hexo" scheme="http://blog.tsihen.xyz/tags/Hexo/"/>
     
   </entry>
   
   <entry>
     <title>【博客】个人博客搭建记</title>
-    <link href="http://blog.goldenhuaji.cn.mw/%E3%80%90%E5%8D%9A%E5%AE%A2%E3%80%91%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0/"/>
-    <id>http://blog.goldenhuaji.cn.mw/%E3%80%90%E5%8D%9A%E5%AE%A2%E3%80%91%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0/</id>
+    <link href="http://blog.tsihen.xyz/%E3%80%90%E5%8D%9A%E5%AE%A2%E3%80%91%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0/"/>
+    <id>http://blog.tsihen.xyz/%E3%80%90%E5%8D%9A%E5%AE%A2%E3%80%91%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0/</id>
     <published>2020-08-05T11:26:55.000Z</published>
     <updated>2020-08-05T11:37:21.267Z</updated>
     
@@ -124,18 +124,18 @@
     
     
     
-      <category term="学习" scheme="http://blog.goldenhuaji.cn.mw/tags/%E5%AD%A6%E4%B9%A0/"/>
+      <category term="学习" scheme="http://blog.tsihen.xyz/tags/%E5%AD%A6%E4%B9%A0/"/>
     
-      <category term="博客" scheme="http://blog.goldenhuaji.cn.mw/tags/%E5%8D%9A%E5%AE%A2/"/>
+      <category term="博客" scheme="http://blog.tsihen.xyz/tags/%E5%8D%9A%E5%AE%A2/"/>
     
-      <category term="Hexo" scheme="http://blog.goldenhuaji.cn.mw/tags/Hexo/"/>
+      <category term="Hexo" scheme="http://blog.tsihen.xyz/tags/Hexo/"/>
     
   </entry>
   
   <entry>
     <title>你好，世界！</title>
-    <link href="http://blog.goldenhuaji.cn.mw/hello-world/"/>
-    <id>http://blog.goldenhuaji.cn.mw/hello-world/</id>
+    <link href="http://blog.tsihen.xyz/hello-world/"/>
+    <id>http://blog.tsihen.xyz/hello-world/</id>
     <published>2020-08-02T04:09:28.759Z</published>
     <updated>2020-12-04T13:55:46.340Z</updated>
     
