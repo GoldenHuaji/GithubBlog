@@ -24,16 +24,24 @@
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"blog.tsihen.xyz","root":"/","images":"/images","scheme":"Gemini","version":"8.2.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":"livere","storage":true,"lazyload":false,"nav":null,"activeClass":"livere"},"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
   </script>
-<meta property="og:type" content="website">
-<meta property="og:title" content="子恒の博客">
-<meta property="og:url" content="http://blog.tsihen.xyz/archives/index.html">
+<meta name="description" content="记录一些常用的 API、接口">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【QQ-Xposed】QQ常用接口、API、监听方法笔记">
+<meta property="og:url" content="http://blog.tsihen.xyz/%E3%80%90QQ-Xposed%E3%80%91QQ%E5%B8%B8%E7%94%A8%E6%8E%A5%E5%8F%A3%E3%80%81API%E3%80%81%E7%9B%91%E5%90%AC%E6%96%B9%E6%B3%95%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="子恒の博客">
+<meta property="og:description" content="记录一些常用的 API、接口">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-02-03T05:27:22.000Z">
+<meta property="article:modified_time" content="2021-02-03T11:40:37.828Z">
 <meta property="article:author" content="Tsihen Ho">
+<meta property="article:tag" content="QScript">
+<meta property="article:tag" content="Xposed">
+<meta property="article:tag" content="QQ">
+<meta property="article:tag" content="笔记">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://blog.tsihen.xyz/archives/">
+<link rel="canonical" href="http://blog.tsihen.xyz/%E3%80%90QQ-Xposed%E3%80%91QQ%E5%B8%B8%E7%94%A8%E6%8E%A5%E5%8F%A3%E3%80%81API%E3%80%81%E7%9B%91%E5%90%AC%E6%96%B9%E6%B3%95%E7%AC%94%E8%AE%B0/">
 
 
 <script class="page-configurations">
@@ -41,7 +49,7 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
@@ -52,7 +60,7 @@
     });
     daovoice('update');
 </script>
-<title>归档 | 子恒の博客</title>
+<title>【QQ-Xposed】QQ常用接口、API、监听方法笔记 | 子恒の博客</title>
   
 
 
@@ -259,153 +267,199 @@
 </noscript>
 
 
-    <div class="main-inner archive posts-collapse">
+    <div class="main-inner post posts-expand">
 
 
   
+
+
+<div class="post-block">
   
   
-  <div class="post-block">
-    <div class="post-content">
-      <div class="collection-title">
-        <span class="collection-header">嗯..! 目前共计 6 篇日志。 继续努力。</span>
-      </div>
 
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://blog.tsihen.xyz/%E3%80%90QQ-Xposed%E3%80%91QQ%E5%B8%B8%E7%94%A8%E6%8E%A5%E5%8F%A3%E3%80%81API%E3%80%81%E7%9B%91%E5%90%AC%E6%96%B9%E6%B3%95%E7%AC%94%E8%AE%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Tsihen Ho">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="子恒の博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          【QQ-Xposed】QQ常用接口、API、监听方法笔记
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
       
-    <div class="collection-year">
-      <span class="collection-header">2021</span>
+
+      <time title="创建时间：2021-02-03 13:27:22 / 修改时间：19:40:37" itemprop="dateCreated datePublished" datetime="2021-02-03T13:27:22+08:00">2021-02-03</time>
+    </span>
+
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>记录一些常用的 API、接口</p>
+<a id="more"></a>
+
+<table>
+<thead>
+<tr>
+<th>类名</th>
+<th>方法名</th>
+<th>方法参数</th>
+<th align="left">作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>.activity.ChatActivityFacade</td>
+<td>a</td>
+<td>QQAppInterface;Context;SessionInfo;String;ArrayList;SendMsgParams</td>
+<td align="left">发送消息</td>
+</tr>
+<tr>
+<td>.activity.ChatActivityFacade</td>
+<td>a</td>
+<td>QQAppInterface;SessionInfo;Boolean</td>
+<td align="left">打开私聊时调用</td>
+</tr>
+<tr>
+<td>.activity.ChatActivityFacade</td>
+<td>b</td>
+<td>QQAppInterface;SessionInfo;Boolean</td>
+<td align="left">同上（不知道有什么区别）</td>
+</tr>
+<tr>
+<td>.activity.ChatActivityFacade</td>
+<td>c</td>
+<td>QQAppInterface;SessionInfo;Boolean</td>
+<td align="left">同上（不知道有什么区别）</td>
+</tr>
+<tr>
+<td>.activity.recent.config.cache.MsgBoxProcessor</td>
+<td>a</td>
+<td>BaseQQAppInterface;RecentUser;Boolean</td>
+<td align="left">发送消息、接受消息时调用两次（在其他地方也会被调用）</td>
+</tr>
+<tr>
+<td>.app.MessageHandlerUtils</td>
+<td>a</td>
+<td>QQAppInterface;MessageRecord;Boolean</td>
+<td align="left">收到消息时调用</td>
+</tr>
+</tbody></table>
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2021-02-03T13:27:22+08:00"
-              content="2021-02-03">
-          02-03
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/%E3%80%90QQ-Xposed%E3%80%91QQ%E5%B8%B8%E7%94%A8%E6%8E%A5%E5%8F%A3%E3%80%81API%E3%80%81%E7%9B%91%E5%90%AC%E6%96%B9%E6%B3%95%E7%AC%94%E8%AE%B0/" itemprop="url">
-            <span itemprop="name">【QQ-Xposed】QQ常用接口、API、监听方法笔记</span>
-          </a>
-      </div>
-
+    
+    
+    
       
-    </header>
-  </article>
-    <div class="collection-year">
-      <span class="collection-header">2020</span>
-    </div>
+  <div class="popular-posts-header">相关文章</div>
+  <ul class="popular-posts">
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="\【QScript】应用预告和更名通知\" rel="bookmark">【QScript】应用预告和更名通知</a></div>
+    </li>
+  </ul>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2020-12-06T17:34:59+08:00"
-              content="2020-12-06">
-          12-06
-        </time>
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>本文作者： </strong>Tsihen Ho
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="http://blog.tsihen.xyz/%E3%80%90QQ-Xposed%E3%80%91QQ%E5%B8%B8%E7%94%A8%E6%8E%A5%E5%8F%A3%E3%80%81API%E3%80%81%E7%9B%91%E5%90%AC%E6%96%B9%E6%B3%95%E7%AC%94%E8%AE%B0/" title="【QQ-Xposed】QQ常用接口、API、监听方法笔记">http://blog.tsihen.xyz/【QQ-Xposed】QQ常用接口、API、监听方法笔记/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+          <div class="followme">
+  <span>欢迎关注我的其它发布渠道</span>
+
+  <div class="social-list">
+
+      <div class="social-item">
+        <a target="_blank" class="social-link" href="/atom.xml">
+          <span class="icon">
+            <i class="fa fa-rss"></i>
+          </span>
+
+          <span class="label">RSS</span>
+        </a>
       </div>
 
-      <div class="post-title">
-          <a class="post-title-link" href="/%E3%80%90QScript%E3%80%91%E5%BA%94%E7%94%A8%E9%A2%84%E5%91%8A%E5%92%8C%E6%9B%B4%E5%90%8D%E9%80%9A%E7%9F%A5/" itemprop="url">
-            <span itemprop="name">【QScript】应用预告和更名通知</span>
-          </a>
+      <div class="social-item">
+        <a target="_blank" class="social-link" href="https://coding-pages-bucket-3464683-7910097-6969-402879-1259692093.cos-website.ap-hongkong.myqcloud.com">
+          <span class="icon">
+            <i class="fa fa-link"></i>
+          </span>
+
+          <span class="label">镜像网站</span>
+        </a>
       </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2020-12-02T21:18:04+08:00"
-              content="2020-12-02">
-          12-02
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/%E3%80%90%E8%B5%84%E6%BA%90%E4%B8%8B%E8%BD%BD%E3%80%91%E7%B4%A2%E5%BC%95/" itemprop="url">
-            <span itemprop="name">【资源下载】索引</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2020-08-06T12:42:49+08:00"
-              content="2020-08-06">
-          08-06
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/%E3%80%90%E5%8D%9A%E5%AE%A2%E3%80%91%E5%8F%8C%E7%BA%BF%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" itemprop="url">
-            <span itemprop="name">【博客】双线搭建个人博客</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2020-08-05T19:26:55+08:00"
-              content="2020-08-05">
-          08-05
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/%E3%80%90%E5%8D%9A%E5%AE%A2%E3%80%91%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0/" itemprop="url">
-            <span itemprop="name">【博客】个人博客搭建记</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2020-08-02T12:09:28+08:00"
-              content="2020-08-02">
-          08-02
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/hello-world/" itemprop="url">
-            <span itemprop="name">你好，世界！</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-
-    </div>
   </div>
-  
-  
-  
+</div>
 
+          <div class="post-tags">
+              <a href="/tags/QScript/" rel="tag"><i class="fa fa-tag"></i> QScript</a>
+              <a href="/tags/Xposed/" rel="tag"><i class="fa fa-tag"></i> Xposed</a>
+              <a href="/tags/QQ/" rel="tag"><i class="fa fa-tag"></i> QQ</a>
+              <a href="/tags/%E7%AC%94%E8%AE%B0/" rel="tag"><i class="fa fa-tag"></i> 笔记</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/%E3%80%90QScript%E3%80%91%E5%BA%94%E7%94%A8%E9%A2%84%E5%91%8A%E5%92%8C%E6%9B%B4%E5%90%8D%E9%80%9A%E7%9F%A5/" rel="prev" title="【QScript】应用预告和更名通知">
+                  <i class="fa fa-chevron-left"></i> 【QScript】应用预告和更名通知
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments" id="lv-container" data-id="city" data-uid="MTAyMC81MTI1Mi8yNzczMw=="></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -507,6 +561,21 @@ setInterval("createtime()",250);
 
 
 
+<script>
+NexT.utils.loadComments('#lv-container', () => {
+  window.livereOptions = {
+    refer: "【QQ-Xposed】QQ常用接口、API、监听方法笔记/"
+  };
+  (function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+    if (typeof LivereTower === 'function') { return; }
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+    e.parentNode.insertBefore(j, e);
+  })(document, 'script');
+});
+</script>
 
 </body>
 </html>

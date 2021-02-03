@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.tsihen.xyz/"/>
-  <updated>2021-01-31T05:24:15.296Z</updated>
+  <updated>2021-02-03T11:40:37.828Z</updated>
   <id>http://blog.tsihen.xyz/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【QQ-Xposed】QQ常用接口、API、监听方法笔记</title>
+    <link href="http://blog.tsihen.xyz/%E3%80%90QQ-Xposed%E3%80%91QQ%E5%B8%B8%E7%94%A8%E6%8E%A5%E5%8F%A3%E3%80%81API%E3%80%81%E7%9B%91%E5%90%AC%E6%96%B9%E6%B3%95%E7%AC%94%E8%AE%B0/"/>
+    <id>http://blog.tsihen.xyz/%E3%80%90QQ-Xposed%E3%80%91QQ%E5%B8%B8%E7%94%A8%E6%8E%A5%E5%8F%A3%E3%80%81API%E3%80%81%E7%9B%91%E5%90%AC%E6%96%B9%E6%B3%95%E7%AC%94%E8%AE%B0/</id>
+    <published>2021-02-03T05:27:22.000Z</published>
+    <updated>2021-02-03T11:40:37.828Z</updated>
+    
+    <content type="html"><![CDATA[<p>记录一些常用的 API、接口</p><a id="more"></a><table><thead><tr><th>类名</th><th>方法名</th><th>方法参数</th><th align="left">作用</th></tr></thead><tbody><tr><td>.activity.ChatActivityFacade</td><td>a</td><td>QQAppInterface;Context;SessionInfo;String;ArrayList;SendMsgParams</td><td align="left">发送消息</td></tr><tr><td>.activity.ChatActivityFacade</td><td>a</td><td>QQAppInterface;SessionInfo;Boolean</td><td align="left">打开私聊时调用</td></tr><tr><td>.activity.ChatActivityFacade</td><td>b</td><td>QQAppInterface;SessionInfo;Boolean</td><td align="left">同上（不知道有什么区别）</td></tr><tr><td>.activity.ChatActivityFacade</td><td>c</td><td>QQAppInterface;SessionInfo;Boolean</td><td align="left">同上（不知道有什么区别）</td></tr><tr><td>.activity.recent.config.cache.MsgBoxProcessor</td><td>a</td><td>BaseQQAppInterface;RecentUser;Boolean</td><td align="left">发送消息、接受消息时调用两次（在其他地方也会被调用）</td></tr><tr><td>.app.MessageHandlerUtils</td><td>a</td><td>QQAppInterface;MessageRecord;Boolean</td><td align="left">收到消息时调用</td></tr></tbody></table>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;记录一些常用的 API、接口&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="QScript" scheme="http://blog.tsihen.xyz/tags/QScript/"/>
+    
+      <category term="Xposed" scheme="http://blog.tsihen.xyz/tags/Xposed/"/>
+    
+      <category term="QQ" scheme="http://blog.tsihen.xyz/tags/QQ/"/>
+    
+      <category term="笔记" scheme="http://blog.tsihen.xyz/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>【QScript】应用预告和更名通知</title>
