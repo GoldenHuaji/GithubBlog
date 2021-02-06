@@ -126,7 +126,7 @@
       </tags>
   </entry>
   <entry>
-    <title>【QScript】应用预告和更名通知</title>
+    <title>【QScript】应用详情和更名通知</title>
     <url>/%E3%80%90QScript%E3%80%91%E5%BA%94%E7%94%A8%E8%AF%A6%E6%83%85%E5%92%8C%E6%9B%B4%E5%90%8D%E9%80%9A%E7%9F%A5/</url>
     <content><![CDATA[<blockquote>
 <p>摘要：</p>
@@ -146,7 +146,11 @@
 <div class="note warning"><h4 id="警告"><a href="#警告" class="headerlink" title="警告"></a>警告</h4><p>我们<strong>不会</strong>在任何<strong>其他网站</strong>中发布<strong>任何版本</strong>，如果您不是从<b><a href="https://blog.goldenhuaji.cn.mw/">本博客</a></b>或<b><a href="https://github.com/GoldenHuaji/QScript">Github</a></b>下载的本软件，请自行<strong>注意安全</strong>。</p>
 </div>
 
-<h2 id="目前的开发进度是？"><a href="#目前的开发进度是？" class="headerlink" title="目前的开发进度是？"></a>目前的开发进度是？</h2><div class="note info no-icon"><h4 id="QScript-V1-1"><a href="#QScript-V1-1" class="headerlink" title="QScript V1.1"></a>QScript V1.1</h4><ul>
+<h2 id="目前的开发进度是？"><a href="#目前的开发进度是？" class="headerlink" title="目前的开发进度是？"></a>目前的开发进度是？</h2><div class="note info no-icon"><h4 id="QScript-V1-1-1"><a href="#QScript-V1-1-1" class="headerlink" title="QScript V1.1.1"></a>QScript V1.1.1</h4><ul>
+<li>防止滥用，新增“高级验证”</li>
+<li>程序出错时，发出警告</li>
+</ul>
+<h4 id="QScript-V1-1"><a href="#QScript-V1-1" class="headerlink" title="QScript V1.1"></a>QScript V1.1</h4><ul>
 <li>实现了 <code>sendTextMsg(String, long), sendTextMsg(String, long, long[]), sendCard(String, long, boolean)</code> 三个 API</li>
 <li>实现了 <code>str2long(String)</code> 这个 API（叫他工具应该更合适）</li>
 <li>实现了 <code>onMsg(Object)</code> 接口的监听</li>
