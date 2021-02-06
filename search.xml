@@ -8,105 +8,14 @@
 <a id="more"></a>
 
 <h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><h3 id="写一个新的帖子"><a href="#写一个新的帖子" class="headerlink" title="写一个新的帖子"></a>写一个新的帖子</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
 <p>更多信息: <a href="https://hexo.io/docs/writing.html">写作</a></p>
 <h3 id="运行服务器"><a href="#运行服务器" class="headerlink" title="运行服务器"></a>运行服务器</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
 <p>更多信息: <a href="https://hexo.io/docs/server.html">服务器</a></p>
 <h3 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
 <p>更多信息: <a href="https://hexo.io/docs/generating.html">生成</a></p>
 <h3 id="部署到远程站点"><a href="#部署到远程站点" class="headerlink" title="部署到远程站点"></a>部署到远程站点</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
 <p>更多信息: <a href="https://hexo.io/docs/one-command-deployment.html">部署</a></p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>【博客】个人博客搭建记</title>
-    <url>/%E3%80%90%E5%8D%9A%E5%AE%A2%E3%80%91%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0/</url>
-    <content><![CDATA[<p>作为一个博客新人，搭建这个博客费了我不少力气，<del>美化更费了不少力气</del>，毕竟是第一次，所以我想到可能会有人跟我一样，在搭建博客时会遇到一些问题，所以写一篇简单的教程教大家如何搭建一个个人博客！</p>
-<a id="more"></a>
-
-<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ul>
-<li><strong>（可选）</strong>拥有一个域名，有服务器或虚拟主机</li>
-<li><strong>（可选）</strong>能快速地访问外网的软件</li>
-<li>下载并安装 <a href="http://nodejs.cn/download/">Node.js</a> 并将其添加到<strong>环境变量</strong></li>
-<li>下载并安装 <a href="http://https//git-scm.com/downloads">Git</a> 并将其添加到<strong>环境变量</strong></li>
-</ul>
-<h2 id="搭建仓库"><a href="#搭建仓库" class="headerlink" title="搭建仓库"></a>搭建仓库</h2><ol>
-<li>前往 <a href="http://github.com/">Github</a> 注册一个账号</li>
-<li>点击网页右上角的“+”，选择“创建仓库”(new repository)，仓库名称为 “YourGithubName.github.io”，<strong>勾选“使用 README 初始化仓库”(Initialize this repository with a README</strong> <img src="https://s1.ax1x.com/2020/08/05/ayKRxJ.png" alt="新建仓库"> <img src="https://s1.ax1x.com/2020/08/05/ayQktK.png" alt="新建仓库"></li>
-</ol>
-<h2 id="安装-Git"><a href="#安装-Git" class="headerlink" title="安装 Git"></a>安装 Git</h2><p>访问 <a href="http://https//git-scm.com/downloads">GitDown</a>，一路直接下载安装，安装完成后，运行 CMD 命令 <code>git --verion</code> ，应正常提示，如果提示<code>&#39;git&#39; 不是内部或外部命令，也不是可运行的程序 或批处理文件</code>，请手动为 git 添加<strong>环境变量</strong></p>
-<h2 id="安装-Node-js"><a href="#安装-Node-js" class="headerlink" title="安装 Node.js"></a>安装 Node.js</h2><p>访问 <a href="http://nodejs.cn/download/">Node.js 官网地址</a>，下载并安装，安装完成后执行 CMD 命令：<code>node -v &amp;&amp; npm -v</code>，如果显示了<code>&#39;node&#39; 不是内部或外部命令，也不是可运行的程序或批处理文件</code>或<code>&#39;npm&#39; 不是内部或外部命令，也不是可运行的程序或批处理文件</code>，请手动<strong>配置环境变量</strong>。</p>
-<h2 id="连接-Github"><a href="#连接-Github" class="headerlink" title="连接 Github"></a>连接 Github</h2><h3 id="绑定账户"><a href="#绑定账户" class="headerlink" title="绑定账户"></a>绑定账户</h3><p>右击桌面，选择<code>Git Bash Here</code>，等待窗口加载完成后运行以下命令(记得打引号)：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git config --global user.name <span class="string">&quot;你的 Github 用户名&quot;</span></span><br><span class="line">git config --global user.email <span class="string">&quot;你的 Github 注册邮箱&quot;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="创建-SSH"><a href="#创建-SSH" class="headerlink" title="创建 SSH"></a>创建 SSH</h3><p>在之前打开的 Gitbash 中运行命令(记得打引号)：<code>ssh-keygen -t rsa -C &quot;你的 Github 注册邮箱&quot;</code>，然后三个回车即可。运行完毕后，在 “C:\User\Username\.ssh” 下找到 “id_rsa.pub”，使用记事本打开它，复制全部内容。接着进入 <a href="http://https//github.com/settings/profile">Github 用户设置</a>，如图所示操作：<img src="https://s1.ax1x.com/2020/08/05/ay37gU.png" alt="1"> <img src="https://s1.ax1x.com/2020/08/05/ay8mPP.png" alt="2"> 现在请在 GitBash 上运行 <code>ssh -T git@github.com</code>，如果出现 <code>Hi, yourGithubName! You&#39;ve successfully...</code>则成功。</p>
-<h2 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h2><p>现在，请你在电脑上新建一个文件夹，这个文件夹用来存储我们个人博客的<strong>所有信息</strong>，位置随意，但文件夹名字中不要出现中文！创建好后，右键该文件夹，选择 “Git Bash Here”，依次运行以下命令：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br><span class="line">hexo init</span><br></pre></td></tr></table></figure>
-
-<p>现在，你已经可以预览你的博客了，在这个 GitBash 上，运行以下命令：<code>hexo g &amp;&amp; hexo s</code>，当显示如图的内容时，访问  <a href="http://localhost:4000/">http://localhost:4000/</a> 来预览你的博客(你可以通过 ctrl+c 来结束命令运行，但结束后便不能预览，必须重新执行命令)。 <img src="https://s1.ax1x.com/2020/08/05/ayJdHJ.png" alt="预览"></p>
-<h2 id="将本地博客部署到-Github"><a href="#将本地博客部署到-Github" class="headerlink" title="将本地博客部署到 Github"></a>将本地博客部署到 Github</h2><p>虽然现在已经可以预览博客了，但在云端却不能访问，所以我们还要把博客部署到 Github 。</p>
-<ol>
-<li><p>打开<b>站点配置文件(位于 博客根目录/_config.yml)</b>，翻到最后，更改 deploy 为如图的样子(注意：每个冒号后面都有一个空格！ )：<img src="https://s1.ax1x.com/2020/08/05/ayY0sS.png" alt="站点配置文件"></p>
-</li>
-<li><p>在 GitBash 中运行命令：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>祝贺！博客已经搭建完成！现在，你可以通过 <a href="http://yourgithubname.github.io/">http://YourGithubName.github.io</a> 来访问你的博客！</p>
-</li>
-</ol>
-]]></content>
-      <tags>
-        <tag>学习</tag>
-        <tag>博客</tag>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【博客】双线搭建个人博客</title>
-    <url>/%E3%80%90%E5%8D%9A%E5%AE%A2%E3%80%91%E5%8F%8C%E7%BA%BF%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<blockquote class="blockquote-center">
-<p>哪个男孩不想拥有一个流畅的博客呢？</p>
-
-</blockquote>
-
-<blockquote>
-<p>经过努力，我们已经搭建好一个博客了。但由于国内特殊网络原因，使得博客加载<strong>非常慢！</strong>今天这期教程就让大家拥有一个快速的博客。</p>
-</blockquote>
-<p><b>本博客中的过程非常重要！必须一步一步地跟着来，错一步，步步错！ </b></p>
-<a id="more"></a>
-
-<p><b>如果您不能放大图像，请您鼠标右击图像，选择<code>在新标签页中打开图片</code></b></p>
-<h2 id="准备（非常重要）"><a href="#准备（非常重要）" class="headerlink" title="准备（非常重要）"></a>准备（非常重要）</h2><ul>
-<li><strong>（重要）</strong>已搭建一个 Github 的单线博客(点击按钮查看) <a class="btn" href="http://goldenhuaji.tk/%E3%80%90%E5%8D%9A%E5%AE%A2%E3%80%91%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0">点击跳转</a></li>
-</ul>
-<h2 id="注册-Coding-账户"><a href="#注册-Coding-账户" class="headerlink" title="注册 Coding 账户"></a>注册 Coding 账户</h2><p>访问 <a href="https://coding.net/">Coding 官网</a>，点击右上角的<code>免费注册</code>，团队名称随便填。完成注册后登录账户。打开<code>个人账户设置</code>，添加<code>服务邮箱</code>、<code>服务密码</code><strong>（非常重要！！）</strong>，如图（由于博主已经添加了，所以显示的是修改）：<img src="https://s1.ax1x.com/2020/08/06/ac4CQ0.png" alt="完成设置+"></p>
-<p>完成后点击<code>SSH公钥</code>，选择<code>新增公钥</code>，在<code>公钥内容</code>中填写 <code>C:\Users\Username\id_rsa.pub</code> 的全部内容(此文件已于上一篇博客中创建，请点击本文顶部的按钮查看该博客)，并勾选<code>永久有效</code>。如图：<img src="https://s1.ax1x.com/2020/08/06/acIfdU.png" alt="创建公钥"></p>
-<h2 id="创建仓库并开源"><a href="#创建仓库并开源" class="headerlink" title="创建仓库并开源"></a>创建仓库并开源</h2><p>登录团队后，点击<code>新建项目</code>，后选择<code>代码托管项目</code>，并如图所示操作<img src="https://s1.ax1x.com/2020/08/06/acfXCR.png" alt="新建项目"><img src="https://s1.ax1x.com/2020/08/06/achV2t.png" alt="创建仓库"></p>
-<p>完成后回到主页，点击左下角的<code>项目设置</code>，点击<code>功能开关</code>，打开<code>持续集成</code>和<code>持续部署</code>，如图。<img src="https://s1.ax1x.com/2020/08/06/achcM6.png" alt="配置项目"></p>
-<p>完成后，返回项目主页，点击<code>代码仓库</code>-&gt;<code>设置</code>-&gt;<code>访问设置</code>-&gt;<code>公开源代码</code>，期间可能会提示输入服务密码，如图(如果您不能放大图像，请您鼠标右击图像，选择<code>在新标签页中打开图片</code>)：<img src="https://s1.ax1x.com/2020/08/06/acISK0.png"></p>
-<p>现在，点击<code>持续部署</code>-&gt;<code>静态网站</code>，完成实名认证后，新建静态网站，网站名称随便写，项目和仓库选择我们之前创建的项目，勾选<code>代码自动部署</code>，如图：<img src="https://s1.ax1x.com/2020/08/06/ac7sRH.png" alt="1"></p>
-<h2 id="链接-Coding"><a href="#链接-Coding" class="headerlink" title="链接 Coding"></a>链接 Coding</h2><p>打开<code>站点配置文件</code>，并如图所示操作：<img src="https://s1.ax1x.com/2020/08/06/acoTAS.png" alt="链接"></p>
-<h2 id="更新博客"><a href="#更新博客" class="headerlink" title="更新博客"></a>更新博客</h2><p>在博客根目录下打开 GitBash ，运行命令：<code>hexo g &amp;&amp; hexo d</code>，期间会让你输入账号密码，请如图操作：</p>
-<p><img src="https://s1.ax1x.com/2020/08/06/ac7MZV.png" alt="更新博客"></p>
-<h2 id="完成"><a href="#完成" class="headerlink" title="完成"></a>完成</h2><p>现在，请点击<code>持续部署</code>-&gt;<code>静态网站</code>，你可以通过 Coding 给你的访问地址来访问你的博客了！ </p>
-]]></content>
-      <tags>
-        <tag>学习</tag>
-        <tag>博客</tag>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【资源下载】索引</title>
-    <url>/%E3%80%90%E8%B5%84%E6%BA%90%E4%B8%8B%E8%BD%BD%E3%80%91%E7%B4%A2%E5%BC%95/</url>
-    <content><![CDATA[<div id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请再试试." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容."><div class="hbe-input-container"><input type="password" id="hbePass" placeholder="您好, 这里需要密码." /><label>您好, 这里需要密码.</label><div class="bottom-line"></div></div><script id="hbeData" type="hbeData" data-hmacdigest="7dd31a9843f3a7c64d94a19f06bb1a7b05470c427c93c852cdc24b4e019c5a97">7ad004f01a3f6162e5951297680a830b3089e567f9d9712015c1507979760ea93ac0e6f5d78d1cea524832119a5828aa9cc710f88371252908d7178668f42052a93686ca27af00a356b5a9c44e9ddd22a0023cbb71bb75c19ee21243ef95688571aaa485cee2d4a1c194de7ed669d05a6e6c88c2130615406b864ae726d54c6d47cbeac4849550aee16e30747bba3d2bc29b1e9f5dea0699bdcd3cdfab807d18c9b3774573c682d142b94a89a9f0167ba534d9ca67ac5f5d4fb738a7f72e8474c9d2c8246e9e78d2d402cc7143de73f7c8cbf39c62c6d55e75f214a58ff099d3c182ef7b418f008766080172751582c040853c76f0c0e45c20ad86eedd27f8fe934b0c189c61fdaeaba426eaa0f0b628d4c344d8ab74e24d8a51324c91271f71</script></div><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
-      <tags>
-        <tag>下载</tag>
-        <tag>加密文档</tag>
-      </tags>
   </entry>
   <entry>
     <title>【QQ-Xposed】QQ常用接口、API、监听方法笔记</title>
@@ -119,9 +28,9 @@
 <p><strong>未完待续……</strong></p>
 ]]></content>
       <tags>
-        <tag>QScript</tag>
-        <tag>Xposed</tag>
         <tag>QQ</tag>
+        <tag>Xposed</tag>
+        <tag>QScript</tag>
         <tag>笔记</tag>
       </tags>
   </entry>
@@ -165,11 +74,103 @@
 </ul>
 </div>]]></content>
       <tags>
+        <tag>Xposed</tag>
         <tag>QScript</tag>
         <tag>QPlus</tag>
         <tag>Android</tag>
-        <tag>Xposed</tag>
         <tag>Kotlin</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【博客】个人博客搭建记</title>
+    <url>/%E3%80%90%E5%8D%9A%E5%AE%A2%E3%80%91%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0/</url>
+    <content><![CDATA[<p>作为一个博客新人，搭建这个博客费了我不少力气，<del>美化更费了不少力气</del>，毕竟是第一次，所以我想到可能会有人跟我一样，在搭建博客时会遇到一些问题，所以写一篇简单的教程教大家如何搭建一个个人博客！</p>
+<a id="more"></a>
+
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ul>
+<li><strong>（可选）</strong>拥有一个域名，有服务器或虚拟主机</li>
+<li><strong>（可选）</strong>能快速地访问外网的软件</li>
+<li>下载并安装 <a href="http://nodejs.cn/download/">Node.js</a> 并将其添加到<strong>环境变量</strong></li>
+<li>下载并安装 <a href="http://https//git-scm.com/downloads">Git</a> 并将其添加到<strong>环境变量</strong></li>
+</ul>
+<h2 id="搭建仓库"><a href="#搭建仓库" class="headerlink" title="搭建仓库"></a>搭建仓库</h2><ol>
+<li>前往 <a href="http://github.com/">Github</a> 注册一个账号</li>
+<li>点击网页右上角的“+”，选择“创建仓库”(new repository)，仓库名称为 “YourGithubName.github.io”，<strong>勾选“使用 README 初始化仓库”(Initialize this repository with a README</strong> <img data-src="https://s1.ax1x.com/2020/08/05/ayKRxJ.png" alt="新建仓库"> <img data-src="https://s1.ax1x.com/2020/08/05/ayQktK.png" alt="新建仓库"></li>
+</ol>
+<h2 id="安装-Git"><a href="#安装-Git" class="headerlink" title="安装 Git"></a>安装 Git</h2><p>访问 <a href="http://https//git-scm.com/downloads">GitDown</a>，一路直接下载安装，安装完成后，运行 CMD 命令 <code>git --verion</code> ，应正常提示，如果提示<code>&#39;git&#39; 不是内部或外部命令，也不是可运行的程序 或批处理文件</code>，请手动为 git 添加<strong>环境变量</strong></p>
+<h2 id="安装-Node-js"><a href="#安装-Node-js" class="headerlink" title="安装 Node.js"></a>安装 Node.js</h2><p>访问 <a href="http://nodejs.cn/download/">Node.js 官网地址</a>，下载并安装，安装完成后执行 CMD 命令：<code>node -v &amp;&amp; npm -v</code>，如果显示了<code>&#39;node&#39; 不是内部或外部命令，也不是可运行的程序或批处理文件</code>或<code>&#39;npm&#39; 不是内部或外部命令，也不是可运行的程序或批处理文件</code>，请手动<strong>配置环境变量</strong>。</p>
+<h2 id="连接-Github"><a href="#连接-Github" class="headerlink" title="连接 Github"></a>连接 Github</h2><h3 id="绑定账户"><a href="#绑定账户" class="headerlink" title="绑定账户"></a>绑定账户</h3><p>右击桌面，选择<code>Git Bash Here</code>，等待窗口加载完成后运行以下命令(记得打引号)：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git config --global user.name <span class="string">&quot;你的 Github 用户名&quot;</span></span><br><span class="line">git config --global user.email <span class="string">&quot;你的 Github 注册邮箱&quot;</span></span><br></pre></td></tr></table></figure>
+<h3 id="创建-SSH"><a href="#创建-SSH" class="headerlink" title="创建 SSH"></a>创建 SSH</h3><p>在之前打开的 Gitbash 中运行命令(记得打引号)：<code>ssh-keygen -t rsa -C &quot;你的 Github 注册邮箱&quot;</code>，然后三个回车即可。运行完毕后，在 “C:\User\Username\.ssh” 下找到 “id_rsa.pub”，使用记事本打开它，复制全部内容。接着进入 <a href="http://https//github.com/settings/profile">Github 用户设置</a>，如图所示操作：<img data-src="https://s1.ax1x.com/2020/08/05/ay37gU.png" alt="1"> <img data-src="https://s1.ax1x.com/2020/08/05/ay8mPP.png" alt="2"> 现在请在 GitBash 上运行 <code>ssh -T git@github.com</code>，如果出现 <code>Hi, yourGithubName! You&#39;ve successfully...</code>则成功。</p>
+<h2 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h2><p>现在，请你在电脑上新建一个文件夹，这个文件夹用来存储我们个人博客的<strong>所有信息</strong>，位置随意，但文件夹名字中不要出现中文！创建好后，右键该文件夹，选择 “Git Bash Here”，依次运行以下命令：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br><span class="line">hexo init</span><br></pre></td></tr></table></figure>
+<p>现在，你已经可以预览你的博客了，在这个 GitBash 上，运行以下命令：<code>hexo g &amp;&amp; hexo s</code>，当显示如图的内容时，访问  <a href="http://localhost:4000/">http://localhost:4000/</a> 来预览你的博客(你可以通过 ctrl+c 来结束命令运行，但结束后便不能预览，必须重新执行命令)。 <img data-src="https://s1.ax1x.com/2020/08/05/ayJdHJ.png" alt="预览"></p>
+<h2 id="将本地博客部署到-Github"><a href="#将本地博客部署到-Github" class="headerlink" title="将本地博客部署到 Github"></a>将本地博客部署到 Github</h2><p>虽然现在已经可以预览博客了，但在云端却不能访问，所以我们还要把博客部署到 Github 。</p>
+<ol>
+<li>打开<b>站点配置文件(位于 博客根目录/_config.yml)</b>，翻到最后，更改 deploy 为如图的样子(注意：每个冒号后面都有一个空格！ )：<img data-src="https://s1.ax1x.com/2020/08/05/ayY0sS.png" alt="站点配置文件"></li>
+<li>在 GitBash 中运行命令：<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure></li>
+<li>祝贺！博客已经搭建完成！现在，你可以通过 <a href="http://yourgithubname.github.io/">http://YourGithubName.github.io</a> 来访问你的博客！</li>
+</ol>
+]]></content>
+      <tags>
+        <tag>学习</tag>
+        <tag>博客</tag>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【资源下载】索引</title>
+    <url>/%E3%80%90%E8%B5%84%E6%BA%90%E4%B8%8B%E8%BD%BD%E3%80%91%E7%B4%A2%E5%BC%95/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请再试试." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="cf57ac74980b532202a1909402da998f24b0f918f6187702add605a92ecabed3">6dcc40e5c93936c5fefd9b1d7efdeae7c3fb65dba504a87601ed021e5e71e75b5891e24d54c7b079dbeabecd9d913189d0422e3919938181adc4b68b0ef9651a2c2d3cb4e2b7b299734323e5079a301fc46e61508faae5eb6390d82f1d3f7102de64b7b640e8f35523a914242f2d2fa2663edc164d92d8cdb9163757e3993e93f1f7c8314148c3e9ac103e5eb38635e88b7f4d7d01e557a688051ed127b4634b446e1e71b91a267f51b4de0d575a7141e5718894ae99b9c056df7bddb525942bcc927e8dfced97c2cff52ada4483e1082df46878b9240517c857cae328b188702d25820951d16534b3dc8a0b0248612992f7b7e40ca42ecfa06e87c710982866b33b5f9421ae65072fe111a3de062dc74564e5b46c18ff37387c390d3bf3234d2e12fb88988ffc78d4811a38ec6ea92fb190e909cfdcf434804d7b3868fd2dbd</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">您好, 这里需要密码.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <tags>
+        <tag>下载</tag>
+        <tag>加密文档</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【博客】双线搭建个人博客</title>
+    <url>/%E3%80%90%E5%8D%9A%E5%AE%A2%E3%80%91%E5%8F%8C%E7%BA%BF%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<blockquote class="blockquote-center">
+<p>哪个男孩不想拥有一个流畅的博客呢？</p>
+
+</blockquote>
+
+<blockquote>
+<p>经过努力，我们已经搭建好一个博客了。但由于国内特殊网络原因，使得博客加载<strong>非常慢！</strong>今天这期教程就让大家拥有一个快速的博客。</p>
+</blockquote>
+<p><b>本博客中的过程非常重要！必须一步一步地跟着来，错一步，步步错！ </b></p>
+<a id="more"></a>
+
+<p><b>如果您不能放大图像，请您鼠标右击图像，选择<code>在新标签页中打开图片</code></b></p>
+<h2 id="准备（非常重要）"><a href="#准备（非常重要）" class="headerlink" title="准备（非常重要）"></a>准备（非常重要）</h2><ul>
+<li><strong>（重要）</strong>已搭建一个 Github 的单线博客(点击按钮查看) <a class="btn" href="http://goldenhuaji.tk/%E3%80%90%E5%8D%9A%E5%AE%A2%E3%80%91%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0">点击跳转</a></li>
+</ul>
+<h2 id="注册-Coding-账户"><a href="#注册-Coding-账户" class="headerlink" title="注册 Coding 账户"></a>注册 Coding 账户</h2><p>访问 <a href="https://coding.net/">Coding 官网</a>，点击右上角的<code>免费注册</code>，团队名称随便填。完成注册后登录账户。打开<code>个人账户设置</code>，添加<code>服务邮箱</code>、<code>服务密码</code><strong>（非常重要！！）</strong>，如图（由于博主已经添加了，所以显示的是修改）：<img data-src="https://s1.ax1x.com/2020/08/06/ac4CQ0.png" alt="完成设置+"></p>
+<p>完成后点击<code>SSH公钥</code>，选择<code>新增公钥</code>，在<code>公钥内容</code>中填写 <code>C:\Users\Username\id_rsa.pub</code> 的全部内容(此文件已于上一篇博客中创建，请点击本文顶部的按钮查看该博客)，并勾选<code>永久有效</code>。如图：<img data-src="https://s1.ax1x.com/2020/08/06/acIfdU.png" alt="创建公钥"></p>
+<h2 id="创建仓库并开源"><a href="#创建仓库并开源" class="headerlink" title="创建仓库并开源"></a>创建仓库并开源</h2><p>登录团队后，点击<code>新建项目</code>，后选择<code>代码托管项目</code>，并如图所示操作<img data-src="https://s1.ax1x.com/2020/08/06/acfXCR.png" alt="新建项目"><img data-src="https://s1.ax1x.com/2020/08/06/achV2t.png" alt="创建仓库"></p>
+<p>完成后回到主页，点击左下角的<code>项目设置</code>，点击<code>功能开关</code>，打开<code>持续集成</code>和<code>持续部署</code>，如图。<img data-src="https://s1.ax1x.com/2020/08/06/achcM6.png" alt="配置项目"></p>
+<p>完成后，返回项目主页，点击<code>代码仓库</code>-&gt;<code>设置</code>-&gt;<code>访问设置</code>-&gt;<code>公开源代码</code>，期间可能会提示输入服务密码，如图(如果您不能放大图像，请您鼠标右击图像，选择<code>在新标签页中打开图片</code>)：<img data-src="https://s1.ax1x.com/2020/08/06/acISK0.png"></p>
+<p>现在，点击<code>持续部署</code>-&gt;<code>静态网站</code>，完成实名认证后，新建静态网站，网站名称随便写，项目和仓库选择我们之前创建的项目，勾选<code>代码自动部署</code>，如图：<img data-src="https://s1.ax1x.com/2020/08/06/ac7sRH.png" alt="1"></p>
+<h2 id="链接-Coding"><a href="#链接-Coding" class="headerlink" title="链接 Coding"></a>链接 Coding</h2><p>打开<code>站点配置文件</code>，并如图所示操作：<img data-src="https://s1.ax1x.com/2020/08/06/acoTAS.png" alt="链接"></p>
+<h2 id="更新博客"><a href="#更新博客" class="headerlink" title="更新博客"></a>更新博客</h2><p>在博客根目录下打开 GitBash ，运行命令：<code>hexo g &amp;&amp; hexo d</code>，期间会让你输入账号密码，请如图操作：</p>
+<p><img data-src="https://s1.ax1x.com/2020/08/06/ac7MZV.png" alt="更新博客"></p>
+<h2 id="完成"><a href="#完成" class="headerlink" title="完成"></a>完成</h2><p>现在，请点击<code>持续部署</code>-&gt;<code>静态网站</code>，你可以通过 Coding 给你的访问地址来访问你的博客了！ </p>
+]]></content>
+      <tags>
+        <tag>学习</tag>
+        <tag>博客</tag>
+        <tag>Hexo</tag>
       </tags>
   </entry>
 </search>
