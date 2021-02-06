@@ -33,11 +33,11 @@
     
     
     
-      <category term="QQ" scheme="http://blog.tsihen.xyz/tags/QQ/"/>
+      <category term="QScript" scheme="http://blog.tsihen.xyz/tags/QScript/"/>
     
       <category term="Xposed" scheme="http://blog.tsihen.xyz/tags/Xposed/"/>
     
-      <category term="QScript" scheme="http://blog.tsihen.xyz/tags/QScript/"/>
+      <category term="QQ" scheme="http://blog.tsihen.xyz/tags/QQ/"/>
     
       <category term="笔记" scheme="http://blog.tsihen.xyz/tags/%E7%AC%94%E8%AE%B0/"/>
     
@@ -66,13 +66,13 @@
     
     
     
-      <category term="Xposed" scheme="http://blog.tsihen.xyz/tags/Xposed/"/>
-    
       <category term="QScript" scheme="http://blog.tsihen.xyz/tags/QScript/"/>
     
       <category term="QPlus" scheme="http://blog.tsihen.xyz/tags/QPlus/"/>
     
       <category term="Android" scheme="http://blog.tsihen.xyz/tags/Android/"/>
+    
+      <category term="Xposed" scheme="http://blog.tsihen.xyz/tags/Xposed/"/>
     
       <category term="Kotlin" scheme="http://blog.tsihen.xyz/tags/Kotlin/"/>
     

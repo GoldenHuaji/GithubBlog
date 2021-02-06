@@ -1,6 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>【博客】个人博客搭建记</title>
+    <url>/%E3%80%90%E5%8D%9A%E5%AE%A2%E3%80%91%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0/</url>
+    <content><![CDATA[<p>作为一个博客新人，搭建这个博客费了我不少力气，<del>美化更费了不少力气</del>，毕竟是第一次，所以我想到可能会有人跟我一样，在搭建博客时会遇到一些问题，所以写一篇简单的教程教大家如何搭建一个个人博客！</p>
+<a id="more"></a>
+
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ul>
+<li><strong>（可选）</strong>拥有一个域名，有服务器或虚拟主机</li>
+<li><strong>（可选）</strong>能快速地访问外网的软件</li>
+<li>下载并安装 <a href="http://nodejs.cn/download/">Node.js</a> 并将其添加到<strong>环境变量</strong></li>
+<li>下载并安装 <a href="http://https//git-scm.com/downloads">Git</a> 并将其添加到<strong>环境变量</strong></li>
+</ul>
+<h2 id="搭建仓库"><a href="#搭建仓库" class="headerlink" title="搭建仓库"></a>搭建仓库</h2><ol>
+<li>前往 <a href="http://github.com/">Github</a> 注册一个账号</li>
+<li>点击网页右上角的“+”，选择“创建仓库”(new repository)，仓库名称为 “YourGithubName.github.io”，<strong>勾选“使用 README 初始化仓库”(Initialize this repository with a README</strong> <img data-src="https://s1.ax1x.com/2020/08/05/ayKRxJ.png" alt="新建仓库"> <img data-src="https://s1.ax1x.com/2020/08/05/ayQktK.png" alt="新建仓库"></li>
+</ol>
+<h2 id="安装-Git"><a href="#安装-Git" class="headerlink" title="安装 Git"></a>安装 Git</h2><p>访问 <a href="http://https//git-scm.com/downloads">GitDown</a>，一路直接下载安装，安装完成后，运行 CMD 命令 <code>git --verion</code> ，应正常提示，如果提示<code>&#39;git&#39; 不是内部或外部命令，也不是可运行的程序 或批处理文件</code>，请手动为 git 添加<strong>环境变量</strong></p>
+<h2 id="安装-Node-js"><a href="#安装-Node-js" class="headerlink" title="安装 Node.js"></a>安装 Node.js</h2><p>访问 <a href="http://nodejs.cn/download/">Node.js 官网地址</a>，下载并安装，安装完成后执行 CMD 命令：<code>node -v &amp;&amp; npm -v</code>，如果显示了<code>&#39;node&#39; 不是内部或外部命令，也不是可运行的程序或批处理文件</code>或<code>&#39;npm&#39; 不是内部或外部命令，也不是可运行的程序或批处理文件</code>，请手动<strong>配置环境变量</strong>。</p>
+<h2 id="连接-Github"><a href="#连接-Github" class="headerlink" title="连接 Github"></a>连接 Github</h2><h3 id="绑定账户"><a href="#绑定账户" class="headerlink" title="绑定账户"></a>绑定账户</h3><p>右击桌面，选择<code>Git Bash Here</code>，等待窗口加载完成后运行以下命令(记得打引号)：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git config --global user.name <span class="string">&quot;你的 Github 用户名&quot;</span></span><br><span class="line">git config --global user.email <span class="string">&quot;你的 Github 注册邮箱&quot;</span></span><br></pre></td></tr></table></figure>
+<h3 id="创建-SSH"><a href="#创建-SSH" class="headerlink" title="创建 SSH"></a>创建 SSH</h3><p>在之前打开的 Gitbash 中运行命令(记得打引号)：<code>ssh-keygen -t rsa -C &quot;你的 Github 注册邮箱&quot;</code>，然后三个回车即可。运行完毕后，在 “C:\User\Username\.ssh” 下找到 “id_rsa.pub”，使用记事本打开它，复制全部内容。接着进入 <a href="http://https//github.com/settings/profile">Github 用户设置</a>，如图所示操作：<img data-src="https://s1.ax1x.com/2020/08/05/ay37gU.png" alt="1"> <img data-src="https://s1.ax1x.com/2020/08/05/ay8mPP.png" alt="2"> 现在请在 GitBash 上运行 <code>ssh -T git@github.com</code>，如果出现 <code>Hi, yourGithubName! You&#39;ve successfully...</code>则成功。</p>
+<h2 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h2><p>现在，请你在电脑上新建一个文件夹，这个文件夹用来存储我们个人博客的<strong>所有信息</strong>，位置随意，但文件夹名字中不要出现中文！创建好后，右键该文件夹，选择 “Git Bash Here”，依次运行以下命令：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br><span class="line">hexo init</span><br></pre></td></tr></table></figure>
+<p>现在，你已经可以预览你的博客了，在这个 GitBash 上，运行以下命令：<code>hexo g &amp;&amp; hexo s</code>，当显示如图的内容时，访问  <a href="http://localhost:4000/">http://localhost:4000/</a> 来预览你的博客(你可以通过 ctrl+c 来结束命令运行，但结束后便不能预览，必须重新执行命令)。 <img data-src="https://s1.ax1x.com/2020/08/05/ayJdHJ.png" alt="预览"></p>
+<h2 id="将本地博客部署到-Github"><a href="#将本地博客部署到-Github" class="headerlink" title="将本地博客部署到 Github"></a>将本地博客部署到 Github</h2><p>虽然现在已经可以预览博客了，但在云端却不能访问，所以我们还要把博客部署到 Github 。</p>
+<ol>
+<li>打开<b>站点配置文件(位于 博客根目录/_config.yml)</b>，翻到最后，更改 deploy 为如图的样子(注意：每个冒号后面都有一个空格！ )：<img data-src="https://s1.ax1x.com/2020/08/05/ayY0sS.png" alt="站点配置文件"></li>
+<li>在 GitBash 中运行命令：<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure></li>
+<li>祝贺！博客已经搭建完成！现在，你可以通过 <a href="http://yourgithubname.github.io/">http://YourGithubName.github.io</a> 来访问你的博客！</li>
+</ol>
+]]></content>
+      <tags>
+        <tag>学习</tag>
+        <tag>博客</tag>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>你好，世界！</title>
     <url>/hello-world/</url>
     <content><![CDATA[<p><a href="https://coding-pages-bucket-3464683-7910097-6969-402879-1259692093.cos-website.ap-hongkong.myqcloud.com/">镜像网站</a></p>
@@ -16,23 +53,6 @@
 <h3 id="部署到远程站点"><a href="#部署到远程站点" class="headerlink" title="部署到远程站点"></a>部署到远程站点</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 <p>更多信息: <a href="https://hexo.io/docs/one-command-deployment.html">部署</a></p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>【QQ-Xposed】QQ常用接口、API、监听方法笔记</title>
-    <url>/%E3%80%90QQ-Xposed%E3%80%91QQ%E5%B8%B8%E7%94%A8%E6%8E%A5%E5%8F%A3%E3%80%81API%E3%80%81%E7%9B%91%E5%90%AC%E6%96%B9%E6%B3%95%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<p>记录一些常用的 API、接口，旨在帮助<strong>Xposed 开发者们更快速地开发出关于 QQ 的模块</strong>，当前 QQ 版本：8.5.5</p>
-<a id="more"></a>
-
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> com.tencent.mobileqq.activity.ChatActivityFacade;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 这里只列出所有第三方类</span></span><br><span class="line"><span class="keyword">import</span> com.tencent.mobileqq.app.QQAppInterface;</span><br><span class="line"><span class="keyword">import</span> com.tencent.mobileqq.activity.aio.SessionInfo;</span><br><span class="line"><span class="keyword">import</span> com.tencent.mobileqq.activity.ChatActivityFacade$SendMsgParams;</span><br><span class="line"><span class="keyword">import</span> com.tencent.mobileqq.data.AtTroopMemberInfo;</span><br><span class="line"><span class="keyword">import</span> com.tencent.mobileqq.data.ArkAppMessage;</span><br><span class="line"><span class="keyword">import</span> com.tencent.mobileqq.structmsg.AbsStructMsg;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 调用这个方法来发送文本消息</span></span><br><span class="line"><span class="comment"> * </span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> QQAppInterface 是什么我也不知道，但 AppRuntime 是它的子类，又因为 QQ 的 com.tencent.common.app.BaseApplicationImpl 里面有一个静态函数 getApplication()，而 BaseApplication 有一个成员函数 getRuntime()，所以，这个参数不是问题，直接传入 AppRuntime 即可</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> SessionInfo 消息接受者</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> String 文本内容</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> ArrayList 被艾特的列表</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">a</span><span class="params">(QQAppInterface, Context, SessionInfo, String, ArrayList&lt;AtTroopMemberinfo&gt;, SendMsgParams)</span></span></span><br><span class="line"><span class="function">    </span></span><br><span class="line"><span class="function"><span class="comment">/**</span></span></span><br><span class="line"><span class="function"><span class="comment"> * 调用这个方法来发送 JSON 消息</span></span></span><br><span class="line"><span class="function"><span class="comment"> * </span></span></span><br><span class="line"><span class="function"><span class="comment"> * @param SessionInfo 接受者</span></span></span><br><span class="line"><span class="function"><span class="comment"> * @param ArkAppMessage 消息。先 &lt;code&gt;new ArkAppMessage()&lt;/code&gt;，然后通过成员函数 &lt;code&gt;fromAppXml(String)&lt;/code&gt; 来设置内容</span></span></span><br><span class="line"><span class="function"><span class="comment"> */</span></span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">boolean</span> <span class="title">a</span><span class="params">(QQAppInterface, SessionInfo, ArkAppMessage)</span></span></span><br><span class="line"><span class="function">    </span></span><br><span class="line"><span class="function"><span class="comment">/**</span></span></span><br><span class="line"><span class="function"><span class="comment"> * 调用这个方法来发送 XML 消息</span></span></span><br><span class="line"><span class="function"><span class="comment"> * </span></span></span><br><span class="line"><span class="function"><span class="comment"> * @param AbsStructMsg 消息。调用静态方法 &lt;code&gt;public static boolean com.tencent.mobileqq.structmsg.TestStructMsg.a(String)&lt;/code&gt;来创建</span></span></span><br><span class="line"><span class="function"><span class="comment"> */</span></span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">a</span><span class="params">(QQAppInterface, SessionInfo, AbsStructMsg)</span></span></span><br></pre></td></tr></table></figure>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> com.tencent.mobileqq..app.MessageHandlerUtils;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 这里只列出所有第三方类</span></span><br><span class="line"><span class="keyword">import</span> com.tencent.mobileqq.app.QQAppInterface;</span><br><span class="line"><span class="keyword">import</span> com.tencent.mobileqq.data.MessageRecord;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 收到消息的时候会调用</span></span><br><span class="line"><span class="comment"> * &lt;br /&gt;</span></span><br><span class="line"><span class="comment"> * 警告：收到消息的时候会调用这个方法多次，所以，请像下面这样调用：</span></span><br><span class="line"><span class="comment"> * &lt;br /&gt;</span></span><br><span class="line"><span class="comment"> * &lt;code&gt;</span></span><br><span class="line"><span class="comment"> * class Hook extends XC_MethodHook &#123;</span></span><br><span class="line"><span class="comment"> *     private List&lt;long&gt; msgDone = new List&lt;long&gt;();</span></span><br><span class="line"><span class="comment"> *     public void afterHookedMethod(MethodHookParam p) &#123;</span></span><br><span class="line"><span class="comment"> *         MessageData msg = MessageData.getMessage(p);</span></span><br><span class="line"><span class="comment"> *         if (msgDone.contains(msg.uid)) return;</span></span><br><span class="line"><span class="comment"> *         // ...</span></span><br><span class="line"><span class="comment"> *     &#125;</span></span><br><span class="line"><span class="comment"> *     class MessageData &#123;</span></span><br><span class="line"><span class="comment"> *         long uid;</span></span><br><span class="line"><span class="comment"> *         // ...</span></span><br><span class="line"><span class="comment"> *         public MessageData getMessage(MethodHookParam p) &#123;</span></span><br><span class="line"><span class="comment"> *             MessageData data = new MessageData();</span></span><br><span class="line"><span class="comment"> *             data.uid = Utils.getField(p.args[1].class, &quot;msgUid&quot;, Long.TYPE).get(p.args[1]); // getField 是一个外界函数，根据类和名字和类型，返回一个属性（Field）</span></span><br><span class="line"><span class="comment"> *         &#125;</span></span><br><span class="line"><span class="comment"> *     &#125;</span></span><br><span class="line"><span class="comment"> * &#125;</span></span><br><span class="line"><span class="comment"> * &lt;/code&gt;</span></span><br><span class="line"><span class="comment"> * </span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> MessageRecord 消息的数据，包括：发送者、消息 ID、发送的群聊、消息内容等</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">boolean</span> <span class="title">a</span><span class="params">(QQAppInterface, MessageRecord, <span class="keyword">boolean</span>)</span></span></span><br></pre></td></tr></table></figure>
-<p><strong>未完待续……</strong></p>
-]]></content>
-      <tags>
-        <tag>QQ</tag>
-        <tag>Xposed</tag>
-        <tag>QScript</tag>
-        <tag>笔记</tag>
-      </tags>
   </entry>
   <entry>
     <title>【QScript】应用详情和更名通知</title>
@@ -74,68 +94,11 @@
 </ul>
 </div>]]></content>
       <tags>
-        <tag>Xposed</tag>
         <tag>QScript</tag>
         <tag>QPlus</tag>
         <tag>Android</tag>
+        <tag>Xposed</tag>
         <tag>Kotlin</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【博客】个人博客搭建记</title>
-    <url>/%E3%80%90%E5%8D%9A%E5%AE%A2%E3%80%91%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0/</url>
-    <content><![CDATA[<p>作为一个博客新人，搭建这个博客费了我不少力气，<del>美化更费了不少力气</del>，毕竟是第一次，所以我想到可能会有人跟我一样，在搭建博客时会遇到一些问题，所以写一篇简单的教程教大家如何搭建一个个人博客！</p>
-<a id="more"></a>
-
-<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ul>
-<li><strong>（可选）</strong>拥有一个域名，有服务器或虚拟主机</li>
-<li><strong>（可选）</strong>能快速地访问外网的软件</li>
-<li>下载并安装 <a href="http://nodejs.cn/download/">Node.js</a> 并将其添加到<strong>环境变量</strong></li>
-<li>下载并安装 <a href="http://https//git-scm.com/downloads">Git</a> 并将其添加到<strong>环境变量</strong></li>
-</ul>
-<h2 id="搭建仓库"><a href="#搭建仓库" class="headerlink" title="搭建仓库"></a>搭建仓库</h2><ol>
-<li>前往 <a href="http://github.com/">Github</a> 注册一个账号</li>
-<li>点击网页右上角的“+”，选择“创建仓库”(new repository)，仓库名称为 “YourGithubName.github.io”，<strong>勾选“使用 README 初始化仓库”(Initialize this repository with a README</strong> <img data-src="https://s1.ax1x.com/2020/08/05/ayKRxJ.png" alt="新建仓库"> <img data-src="https://s1.ax1x.com/2020/08/05/ayQktK.png" alt="新建仓库"></li>
-</ol>
-<h2 id="安装-Git"><a href="#安装-Git" class="headerlink" title="安装 Git"></a>安装 Git</h2><p>访问 <a href="http://https//git-scm.com/downloads">GitDown</a>，一路直接下载安装，安装完成后，运行 CMD 命令 <code>git --verion</code> ，应正常提示，如果提示<code>&#39;git&#39; 不是内部或外部命令，也不是可运行的程序 或批处理文件</code>，请手动为 git 添加<strong>环境变量</strong></p>
-<h2 id="安装-Node-js"><a href="#安装-Node-js" class="headerlink" title="安装 Node.js"></a>安装 Node.js</h2><p>访问 <a href="http://nodejs.cn/download/">Node.js 官网地址</a>，下载并安装，安装完成后执行 CMD 命令：<code>node -v &amp;&amp; npm -v</code>，如果显示了<code>&#39;node&#39; 不是内部或外部命令，也不是可运行的程序或批处理文件</code>或<code>&#39;npm&#39; 不是内部或外部命令，也不是可运行的程序或批处理文件</code>，请手动<strong>配置环境变量</strong>。</p>
-<h2 id="连接-Github"><a href="#连接-Github" class="headerlink" title="连接 Github"></a>连接 Github</h2><h3 id="绑定账户"><a href="#绑定账户" class="headerlink" title="绑定账户"></a>绑定账户</h3><p>右击桌面，选择<code>Git Bash Here</code>，等待窗口加载完成后运行以下命令(记得打引号)：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git config --global user.name <span class="string">&quot;你的 Github 用户名&quot;</span></span><br><span class="line">git config --global user.email <span class="string">&quot;你的 Github 注册邮箱&quot;</span></span><br></pre></td></tr></table></figure>
-<h3 id="创建-SSH"><a href="#创建-SSH" class="headerlink" title="创建 SSH"></a>创建 SSH</h3><p>在之前打开的 Gitbash 中运行命令(记得打引号)：<code>ssh-keygen -t rsa -C &quot;你的 Github 注册邮箱&quot;</code>，然后三个回车即可。运行完毕后，在 “C:\User\Username\.ssh” 下找到 “id_rsa.pub”，使用记事本打开它，复制全部内容。接着进入 <a href="http://https//github.com/settings/profile">Github 用户设置</a>，如图所示操作：<img data-src="https://s1.ax1x.com/2020/08/05/ay37gU.png" alt="1"> <img data-src="https://s1.ax1x.com/2020/08/05/ay8mPP.png" alt="2"> 现在请在 GitBash 上运行 <code>ssh -T git@github.com</code>，如果出现 <code>Hi, yourGithubName! You&#39;ve successfully...</code>则成功。</p>
-<h2 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h2><p>现在，请你在电脑上新建一个文件夹，这个文件夹用来存储我们个人博客的<strong>所有信息</strong>，位置随意，但文件夹名字中不要出现中文！创建好后，右键该文件夹，选择 “Git Bash Here”，依次运行以下命令：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br><span class="line">hexo init</span><br></pre></td></tr></table></figure>
-<p>现在，你已经可以预览你的博客了，在这个 GitBash 上，运行以下命令：<code>hexo g &amp;&amp; hexo s</code>，当显示如图的内容时，访问  <a href="http://localhost:4000/">http://localhost:4000/</a> 来预览你的博客(你可以通过 ctrl+c 来结束命令运行，但结束后便不能预览，必须重新执行命令)。 <img data-src="https://s1.ax1x.com/2020/08/05/ayJdHJ.png" alt="预览"></p>
-<h2 id="将本地博客部署到-Github"><a href="#将本地博客部署到-Github" class="headerlink" title="将本地博客部署到 Github"></a>将本地博客部署到 Github</h2><p>虽然现在已经可以预览博客了，但在云端却不能访问，所以我们还要把博客部署到 Github 。</p>
-<ol>
-<li>打开<b>站点配置文件(位于 博客根目录/_config.yml)</b>，翻到最后，更改 deploy 为如图的样子(注意：每个冒号后面都有一个空格！ )：<img data-src="https://s1.ax1x.com/2020/08/05/ayY0sS.png" alt="站点配置文件"></li>
-<li>在 GitBash 中运行命令：<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure></li>
-<li>祝贺！博客已经搭建完成！现在，你可以通过 <a href="http://yourgithubname.github.io/">http://YourGithubName.github.io</a> 来访问你的博客！</li>
-</ol>
-]]></content>
-      <tags>
-        <tag>学习</tag>
-        <tag>博客</tag>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【资源下载】索引</title>
-    <url>/%E3%80%90%E8%B5%84%E6%BA%90%E4%B8%8B%E8%BD%BD%E3%80%91%E7%B4%A2%E5%BC%95/</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请再试试." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="cf57ac74980b532202a1909402da998f24b0f918f6187702add605a92ecabed3">6dcc40e5c93936c5fefd9b1d7efdeae7c3fb65dba504a87601ed021e5e71e75b5891e24d54c7b079dbeabecd9d913189d0422e3919938181adc4b68b0ef9651a2c2d3cb4e2b7b299734323e5079a301fc46e61508faae5eb6390d82f1d3f7102de64b7b640e8f35523a914242f2d2fa2663edc164d92d8cdb9163757e3993e93f1f7c8314148c3e9ac103e5eb38635e88b7f4d7d01e557a688051ed127b4634b446e1e71b91a267f51b4de0d575a7141e5718894ae99b9c056df7bddb525942bcc927e8dfced97c2cff52ada4483e1082df46878b9240517c857cae328b188702d25820951d16534b3dc8a0b0248612992f7b7e40ca42ecfa06e87c710982866b33b5f9421ae65072fe111a3de062dc74564e5b46c18ff37387c390d3bf3234d2e12fb88988ffc78d4811a38ec6ea92fb190e909cfdcf434804d7b3868fd2dbd</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">您好, 这里需要密码.</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <tags>
-        <tag>下载</tag>
-        <tag>加密文档</tag>
       </tags>
   </entry>
   <entry>
@@ -171,6 +134,43 @@
         <tag>学习</tag>
         <tag>博客</tag>
         <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【QQ-Xposed】QQ常用接口、API、监听方法笔记</title>
+    <url>/%E3%80%90QQ-Xposed%E3%80%91QQ%E5%B8%B8%E7%94%A8%E6%8E%A5%E5%8F%A3%E3%80%81API%E3%80%81%E7%9B%91%E5%90%AC%E6%96%B9%E6%B3%95%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<p>记录一些常用的 API、接口，旨在帮助<strong>Xposed 开发者们更快速地开发出关于 QQ 的模块</strong>，当前 QQ 版本：8.5.5</p>
+<a id="more"></a>
+
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> com.tencent.mobileqq.activity.ChatActivityFacade;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 这里只列出所有第三方类</span></span><br><span class="line"><span class="keyword">import</span> com.tencent.mobileqq.app.QQAppInterface;</span><br><span class="line"><span class="keyword">import</span> com.tencent.mobileqq.activity.aio.SessionInfo;</span><br><span class="line"><span class="keyword">import</span> com.tencent.mobileqq.activity.ChatActivityFacade$SendMsgParams;</span><br><span class="line"><span class="keyword">import</span> com.tencent.mobileqq.data.AtTroopMemberInfo;</span><br><span class="line"><span class="keyword">import</span> com.tencent.mobileqq.data.ArkAppMessage;</span><br><span class="line"><span class="keyword">import</span> com.tencent.mobileqq.structmsg.AbsStructMsg;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 调用这个方法来发送文本消息</span></span><br><span class="line"><span class="comment"> * </span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> QQAppInterface 是什么我也不知道，但 AppRuntime 是它的子类，又因为 QQ 的 com.tencent.common.app.BaseApplicationImpl 里面有一个静态函数 getApplication()，而 BaseApplication 有一个成员函数 getRuntime()，所以，这个参数不是问题，直接传入 AppRuntime 即可</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> SessionInfo 消息接受者</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> String 文本内容</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> ArrayList 被艾特的列表</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">a</span><span class="params">(QQAppInterface, Context, SessionInfo, String, ArrayList&lt;AtTroopMemberinfo&gt;, SendMsgParams)</span></span></span><br><span class="line"><span class="function">    </span></span><br><span class="line"><span class="function"><span class="comment">/**</span></span></span><br><span class="line"><span class="function"><span class="comment"> * 调用这个方法来发送 JSON 消息</span></span></span><br><span class="line"><span class="function"><span class="comment"> * </span></span></span><br><span class="line"><span class="function"><span class="comment"> * @param SessionInfo 接受者</span></span></span><br><span class="line"><span class="function"><span class="comment"> * @param ArkAppMessage 消息。先 &lt;code&gt;new ArkAppMessage()&lt;/code&gt;，然后通过成员函数 &lt;code&gt;fromAppXml(String)&lt;/code&gt; 来设置内容</span></span></span><br><span class="line"><span class="function"><span class="comment"> */</span></span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">boolean</span> <span class="title">a</span><span class="params">(QQAppInterface, SessionInfo, ArkAppMessage)</span></span></span><br><span class="line"><span class="function">    </span></span><br><span class="line"><span class="function"><span class="comment">/**</span></span></span><br><span class="line"><span class="function"><span class="comment"> * 调用这个方法来发送 XML 消息</span></span></span><br><span class="line"><span class="function"><span class="comment"> * </span></span></span><br><span class="line"><span class="function"><span class="comment"> * @param AbsStructMsg 消息。调用静态方法 &lt;code&gt;public static boolean com.tencent.mobileqq.structmsg.TestStructMsg.a(String)&lt;/code&gt;来创建</span></span></span><br><span class="line"><span class="function"><span class="comment"> */</span></span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">a</span><span class="params">(QQAppInterface, SessionInfo, AbsStructMsg)</span></span></span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> com.tencent.mobileqq..app.MessageHandlerUtils;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 这里只列出所有第三方类</span></span><br><span class="line"><span class="keyword">import</span> com.tencent.mobileqq.app.QQAppInterface;</span><br><span class="line"><span class="keyword">import</span> com.tencent.mobileqq.data.MessageRecord;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 收到消息的时候会调用</span></span><br><span class="line"><span class="comment"> * &lt;br /&gt;</span></span><br><span class="line"><span class="comment"> * 警告：收到消息的时候会调用这个方法多次，所以，请像下面这样调用：</span></span><br><span class="line"><span class="comment"> * &lt;br /&gt;</span></span><br><span class="line"><span class="comment"> * &lt;code&gt;</span></span><br><span class="line"><span class="comment"> * class Hook extends XC_MethodHook &#123;</span></span><br><span class="line"><span class="comment"> *     private List&lt;long&gt; msgDone = new List&lt;long&gt;();</span></span><br><span class="line"><span class="comment"> *     public void afterHookedMethod(MethodHookParam p) &#123;</span></span><br><span class="line"><span class="comment"> *         MessageData msg = MessageData.getMessage(p);</span></span><br><span class="line"><span class="comment"> *         if (msgDone.contains(msg.uid)) return;</span></span><br><span class="line"><span class="comment"> *         // ...</span></span><br><span class="line"><span class="comment"> *     &#125;</span></span><br><span class="line"><span class="comment"> *     class MessageData &#123;</span></span><br><span class="line"><span class="comment"> *         long uid;</span></span><br><span class="line"><span class="comment"> *         // ...</span></span><br><span class="line"><span class="comment"> *         public MessageData getMessage(MethodHookParam p) &#123;</span></span><br><span class="line"><span class="comment"> *             MessageData data = new MessageData();</span></span><br><span class="line"><span class="comment"> *             data.uid = Utils.getField(p.args[1].class, &quot;msgUid&quot;, Long.TYPE).get(p.args[1]); // getField 是一个外界函数，根据类和名字和类型，返回一个属性（Field）</span></span><br><span class="line"><span class="comment"> *         &#125;</span></span><br><span class="line"><span class="comment"> *     &#125;</span></span><br><span class="line"><span class="comment"> * &#125;</span></span><br><span class="line"><span class="comment"> * &lt;/code&gt;</span></span><br><span class="line"><span class="comment"> * </span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> MessageRecord 消息的数据，包括：发送者、消息 ID、发送的群聊、消息内容等</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">boolean</span> <span class="title">a</span><span class="params">(QQAppInterface, MessageRecord, <span class="keyword">boolean</span>)</span></span></span><br></pre></td></tr></table></figure>
+<p><strong>未完待续……</strong></p>
+]]></content>
+      <tags>
+        <tag>QScript</tag>
+        <tag>Xposed</tag>
+        <tag>QQ</tag>
+        <tag>笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【资源下载】索引</title>
+    <url>/%E3%80%90%E8%B5%84%E6%BA%90%E4%B8%8B%E8%BD%BD%E3%80%91%E7%B4%A2%E5%BC%95/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请再试试." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="cf57ac74980b532202a1909402da998f24b0f918f6187702add605a92ecabed3">6dcc40e5c93936c5fefd9b1d7efdeae7c3fb65dba504a87601ed021e5e71e75b5891e24d54c7b079dbeabecd9d913189d0422e3919938181adc4b68b0ef9651a2c2d3cb4e2b7b299734323e5079a301fc46e61508faae5eb6390d82f1d3f7102de64b7b640e8f35523a914242f2d2fa2663edc164d92d8cdb9163757e3993e93f1f7c8314148c3e9ac103e5eb38635e88b7f4d7d01e557a688051ed127b4634b446e1e71b91a267f51b4de0d575a7141e5718894ae99b9c056df7bddb525942bcc927e8dfced97c2cff52ada4483e1082df46878b9240517c857cae328b188702d25820951d16534b3dc8a0b0248612992f7b7e40ca42ecfa06e87c710982866b33b5f9421ae65072fe111a3de062dc74564e5b46c18ff37387c390d3bf3234d2e12fb88988ffc78d4811a38ec6ea92fb190e909cfdcf434804d7b3868fd2dbd</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">您好, 这里需要密码.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <tags>
+        <tag>下载</tag>
+        <tag>加密文档</tag>
       </tags>
   </entry>
 </search>
