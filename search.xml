@@ -66,7 +66,7 @@
 </blockquote>
 <a id="more"></a>
 
-<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p>如摘要所言，本次将 “QPlus” 更名为 ”QScript“，额外提供脚本功能，<strong>提供部分非脚本功能</strong>。本模块主要使用 <a href="https://kotl.in/">Kotlin</a> 开发，下载链接：<a href="https://github.com/GoldenHuaji/QScript/releases">Github</a>。最新版本为：<code>V1.2</code></p>
+<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p>如摘要所言，本次将 “QPlus” 更名为 ”QScript“，额外提供脚本功能，<strong>提供部分非脚本功能</strong>。本模块主要使用 <a href="https://kotl.in/">Kotlin</a> 开发，下载链接：<a href="https://github.com/GoldenHuaji/QScript/releases">Github</a>。最新版本为：<code>V1.3.0</code></p>
 <h1 id="Q-amp-A"><a href="#Q-amp-A" class="headerlink" title="Q &amp; A"></a>Q &amp; A</h1><hr>
 <h2 id="QScript-是什么？"><a href="#QScript-是什么？" class="headerlink" title="QScript 是什么？"></a>QScript 是什么？</h2><p><strong>一个 <a href="https://xposed.info/">Xposed</a> 模块</strong>，用于执行<strong>自动化脚本</strong></p>
 <h2 id="如何启用？"><a href="#如何启用？" class="headerlink" title="如何启用？"></a>如何启用？</h2><p>在 <a href="xposed.info">Xposed</a> 管理器中勾选本模块并重启手机。</p>
@@ -81,7 +81,15 @@
 <div class="note warning"><h4 id="警告"><a href="#警告" class="headerlink" title="警告"></a>警告</h4><p>我们<strong>不会</strong>在任何<strong>其他网站</strong>中发布<strong>任何版本</strong>，如果您不是从<b><a href="https://blog.goldenhuaji.cn.mw/">本博客</a></b>或<b><a href="https://github.com/GoldenHuaji/QScript">Github</a></b>下载的本软件，请自行<strong>注意安全</strong>。</p>
 </div>
 
-<h2 id="目前的开发进度是？"><a href="#目前的开发进度是？" class="headerlink" title="目前的开发进度是？"></a>目前的开发进度是？</h2><div class="note info no-icon"><h4 id="QScript-V1-2"><a href="#QScript-V1-2" class="headerlink" title="QScript V1.2"></a>QScript V1.2</h4><ul>
+<h2 id="目前的开发进度是？"><a href="#目前的开发进度是？" class="headerlink" title="目前的开发进度是？"></a>目前的开发进度是？</h2><div class="note info no-icon"><h4 id="QScript-V1-3-0"><a href="#QScript-V1-3-0" class="headerlink" title="QScript V1.3.0"></a>QScript V1.3.0</h4><ul>
+<li>修复BUG</li>
+<li>更改模块储存目录为 <code>/sdcard/Android/data/com.tencent.mobileqq/QScript</code></li>
+<li>增加一些<strong>没啥用</strong>的附加功能</li>
+</ul>
+<h4 id="QScript-V1-2-1-V1-2-5"><a href="#QScript-V1-2-1-V1-2-5" class="headerlink" title="QScript V1.2.1~V1.2.5"></a>QScript V1.2.1~V1.2.5</h4><ul>
+<li>这些版本一直在修复BUG。没什么好说的</li>
+</ul>
+<h4 id="QScript-V1-2"><a href="#QScript-V1-2" class="headerlink" title="QScript V1.2"></a>QScript V1.2</h4><ul>
 <li>实现了对 <code>onJoin(Object)</code> 接口的调用</li>
 <li>实现了 <code>shutUp(long, long, long)</code> 和 <code>shutAllUp(long, boolean)</code> 这两个接口</li>
 <li>修复了有时候 <code>sendTextMsg</code> 报错的 bug（即获取的 <code>AppRuntime</code> 不是 <code>QQAppInterface</code> 的 BUG）</li>
